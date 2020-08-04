@@ -1,7 +1,7 @@
 # Jogatina (Rede Social para Gamers)
 > Short blurb about what your product does.
 
-![](img/tetris.gif)
+![](tetris.gif)
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
