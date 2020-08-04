@@ -34,7 +34,12 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 ## Contribuidores
 
 1. Cezar ()
+<<<<<<< HEAD
 2. Kaique (https://github.com/Kaique-Rodrigues)
 3. Rafael ()
+=======
+2. Kaique ()
+3. Rafael (https://github.com/rafaoctavio)
+>>>>>>> 03de7f9bbf76a29f311a85c24f75580b9cd569ba
 4. Ricardo ()
 
