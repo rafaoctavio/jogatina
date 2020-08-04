@@ -35,6 +35,6 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 
 1. Cezar ()
 2. Kaique ()
-3. Rafael (https://github.com/rafaoctavio) hauhuahau
+3. Rafael (https://github.com/rafaoctavio)
 4. Ricardo ()
 
