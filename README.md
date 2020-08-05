@@ -38,3 +38,4 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 3. Rafael (https://github.com/rafaoctavio)
 4. Ricardo (https://github.com/ricardomasiero)
 
+pinto
