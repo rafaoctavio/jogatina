@@ -37,5 +37,3 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 2. Kaique (https://github.com/Kaique-Rodrigues)
 3. Rafael (https://github.com/rafaoctavio)
 4. Ricardo (https://github.com/ricardomasiero)
-
-pinto
