@@ -17,3 +17,7 @@ body
     width: 300;
     height: auto;
 }
+.navbar .navbar-expand-lg .navbar-light
+{
+    background-color: brown;
+}
