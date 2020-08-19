@@ -95,6 +95,16 @@ $theme-colors: map-merge(
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+body {
+  background-color: $darkerjogatina;
+}
+
 button {
     margin-right: 5px;
 }
+
+.list-group {
+  margin-top: 50px;
+
+}
+
