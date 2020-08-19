@@ -7265,5 +7265,14 @@ a.text-darker:hover, a.text-darker:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+body {
+  background-color: #252525; }
+
 button {
   margin-right: 5px; }
+
+.list-group {
+  margin-top: 50px; }
+
+.copyright {
+  color: white; }
