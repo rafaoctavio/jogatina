@@ -27,6 +27,7 @@
   --light: #f8f9fa;
   --dark: #414141;
   --darker: #252525;
+  --discord: #7384D4;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1318,6 +1319,23 @@ pre {
   .table-hover .table-darker:hover > th {
     background-color: #b5b5b5; }
 
+.table-discord,
+.table-discord > th,
+.table-discord > td {
+  background-color: #d8ddf3; }
+
+.table-discord th,
+.table-discord td,
+.table-discord thead th,
+.table-discord tbody + tbody {
+  border-color: #b6bfe9; }
+
+.table-hover .table-discord:hover {
+  background-color: #c5cced; }
+  .table-hover .table-discord:hover > td,
+  .table-hover .table-discord:hover > th {
+    background-color: #c5cced; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2020,6 +2038,32 @@ fieldset:disabled a.btn {
     .show > .btn-darker.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(70, 70, 70, 0.5); }
 
+.btn-discord {
+  color: #fff;
+  background-color: #7384D4;
+  border-color: #7384D4; }
+  .btn-discord:hover {
+    color: #fff;
+    background-color: #566acb;
+    border-color: #4c62c8; }
+  .btn-discord:focus, .btn-discord.focus {
+    color: #fff;
+    background-color: #566acb;
+    border-color: #4c62c8;
+    box-shadow: 0 0 0 0.2rem rgba(136, 150, 218, 0.5); }
+  .btn-discord.disabled, .btn-discord:disabled {
+    color: #fff;
+    background-color: #7384D4;
+    border-color: #7384D4; }
+  .btn-discord:not(:disabled):not(.disabled):active, .btn-discord:not(:disabled):not(.disabled).active,
+  .show > .btn-discord.dropdown-toggle {
+    color: #fff;
+    background-color: #4c62c8;
+    border-color: #4259c5; }
+    .btn-discord:not(:disabled):not(.disabled):active:focus, .btn-discord:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-discord.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(136, 150, 218, 0.5); }
+
 .btn-outline-primary {
   color: #ff0000;
   border-color: #ff0000; }
@@ -2208,6 +2252,27 @@ fieldset:disabled a.btn {
     .btn-outline-darker:not(:disabled):not(.disabled):active:focus, .btn-outline-darker:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-darker.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(37, 37, 37, 0.5); }
+
+.btn-outline-discord {
+  color: #7384D4;
+  border-color: #7384D4; }
+  .btn-outline-discord:hover {
+    color: #fff;
+    background-color: #7384D4;
+    border-color: #7384D4; }
+  .btn-outline-discord:focus, .btn-outline-discord.focus {
+    box-shadow: 0 0 0 0.2rem rgba(115, 132, 212, 0.5); }
+  .btn-outline-discord.disabled, .btn-outline-discord:disabled {
+    color: #7384D4;
+    background-color: transparent; }
+  .btn-outline-discord:not(:disabled):not(.disabled):active, .btn-outline-discord:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-discord.dropdown-toggle {
+    color: #fff;
+    background-color: #7384D4;
+    border-color: #7384D4; }
+    .btn-outline-discord:not(:disabled):not(.disabled):active:focus, .btn-outline-discord:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-discord.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(115, 132, 212, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3744,6 +3809,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(37, 37, 37, 0.5); }
 
+.badge-discord {
+  color: #fff;
+  background-color: #7384D4; }
+  a.badge-discord:hover, a.badge-discord:focus {
+    color: #fff;
+    background-color: #4c62c8; }
+  a.badge-discord:focus, a.badge-discord.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(115, 132, 212, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -3860,6 +3935,15 @@ input[type="button"].btn-block {
     border-top-color: #b5b5b5; }
   .alert-darker .alert-link {
     color: black; }
+
+.alert-discord {
+  color: #3c456e;
+  background-color: #e3e6f6;
+  border-color: #d8ddf3; }
+  .alert-discord hr {
+    border-top-color: #c5cced; }
+  .alert-discord .alert-link {
+    color: #2a304d; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4148,6 +4232,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #131313;
     border-color: #131313; }
+
+.list-group-item-discord {
+  color: #3c456e;
+  background-color: #d8ddf3; }
+  .list-group-item-discord.list-group-item-action:hover, .list-group-item-discord.list-group-item-action:focus {
+    color: #3c456e;
+    background-color: #c5cced; }
+  .list-group-item-discord.list-group-item-action.active {
+    color: #fff;
+    background-color: #3c456e;
+    border-color: #3c456e; }
 
 .close {
   float: right;
@@ -4843,6 +4938,14 @@ button.bg-darker:hover,
 button.bg-darker:focus {
   background-color: #0c0c0c !important; }
 
+.bg-discord {
+  background-color: #7384D4 !important; }
+
+a.bg-discord:hover, a.bg-discord:focus,
+button.bg-discord:hover,
+button.bg-discord:focus {
+  background-color: #4c62c8 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -4905,6 +5008,9 @@ button.bg-darker:focus {
 
 .border-darker {
   border-color: #252525 !important; }
+
+.border-discord {
+  border-color: #7384D4 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7172,6 +7278,12 @@ a.text-dark:hover, a.text-dark:focus {
 a.text-darker:hover, a.text-darker:focus {
   color: black !important; }
 
+.text-discord {
+  color: #7384D4 !important; }
+
+a.text-discord:hover, a.text-discord:focus {
+  color: #3b52c0 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7266,13 +7378,32 @@ a.text-darker:hover, a.text-darker:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: #252525; }
+  background-color: #252525;
+  font-family: 'Do Hyeon';
+  font-size: 22px; }
 
 button {
   margin-right: 5px; }
 
-.list-group {
-  margin-top: 50px; }
+.container {
+  margin-top: 100px;
+  color: #fff; }
 
 .copyright {
-  color: white; }
+  color: white;
+  background-color: #414141; }
+
+.progress {
+  margin-bottom: 20px; }
+
+.fakeimg {
+  height: 200px;
+  background: #414141; }
+
+.fakeimgprofile {
+  width: 50px;
+  height: 50px;
+  background: #414141; }
+
+.border {
+  color: #000; }
