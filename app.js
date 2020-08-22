@@ -5,13 +5,17 @@ http.createServer((req, res)=> {
     res.end("Meu primeiro servidor");
 
     switch(req.url) {
-        case "./login.html":
-        res.end("Você está na pagina home!");
+        case "/login.html":
+        res.end("login.html");
         break;
-        case "cadastro"
+        case "/cadastro.html":
+        res.end ("cadastro.html");
+        break;
 
     }
 
 }).listen(3000, "localhost");
+
+
 
 
