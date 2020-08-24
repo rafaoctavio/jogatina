@@ -1,0 +1,27 @@
+{
+  "name": "jogatina",
+  "version": "1.0.0",
+  "description": "> Rede Social voltada para Gamers!",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch assets/css/style.scss assets/css/style.css",
+    "sass-min": "node-sass --watch assets/css/style.scss assets/css/style.min.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaoctavio/jogatina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaoctavio/jogatina/issues"
+  },
+  "homepage": "https://github.com/rafaoctavio/jogatina#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0",
+    "popper.js": "^1.16.1"
+  }
+}
