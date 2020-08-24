@@ -19,13 +19,15 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 ## Histórico do Desenvolvimento
 
 * Sprint 5
-     
+    * 
 * Sprint 4
-         
+    * 
+    * 
 * Sprint 3
-     
+    * 
 * Sprint 2
-    
+    * 
+    *
 * Sprint 1
     * Work in progress
 
@@ -39,3 +41,4 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 2. Kaique (https://github.com/Kaique-Rodrigues)
 3. Rafael (https://github.com/rafaoctavio)
 4. Ricardo (https://github.com/ricardomasiero)
+
