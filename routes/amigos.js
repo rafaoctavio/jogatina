@@ -3,7 +3,7 @@ var router = express.Router();
 var cms = require('../data/cms')
 
 /* GET home page. */
-router.get('/amigos', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('amigos', { title: 'Express' });
 });
 
