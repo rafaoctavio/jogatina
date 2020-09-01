@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', casdastroRouter);
+app.use('/', cadastroRouter);
 app.use('/amigos', amigosRouter);
 app.use('/profile', profileRouter);
 app.use('/login', loginRouter);
