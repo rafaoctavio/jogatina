@@ -7379,7 +7379,7 @@ a.text-discord:hover, a.text-discord:focus {
 
 body {
   background-color: #252525;
-  font-family: 'Do Hyeon';
+  font-family: 'MedievalSharp';
   font-size: 22px; }
 
 button {
@@ -7388,6 +7388,10 @@ button {
 .container {
   margin-top: 100px;
   color: #fff; }
+
+h4, p {
+  color: white;
+  background-color: #252525; }
 
 .copyright {
   color: white;
@@ -7406,4 +7410,34 @@ button {
   background: #414141; }
 
 .border {
-  color: #000; }
+  color: #fff; }
+
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #fff; }
+
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2; }
+
+.divider-text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1; }
+
+.btn-facebook {
+  background-color: #405D9D;
+  color: #fff; }
+
+.btn-twitter {
+  background-color: #42AEEC;
+  color: #fff; }

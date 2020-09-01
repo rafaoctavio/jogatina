@@ -43,6 +43,8 @@ $cyan:    #17a2b8 !default;
 $redishjogatina: #ff0000 !default;
 $redjogatina: #af0404 !default;
 $discord: #7384D4 !default;
+$facebook:#405D9D !default;
+
 
 
 
@@ -91,6 +93,7 @@ $theme-colors: map-merge(
     "dark":       $dark,
     "darker":     $darker,
     "discord":    $discord
+    
   ),
   $theme-colors
 );
@@ -101,7 +104,7 @@ $theme-colors: map-merge(
 
 body {
   background-color: $darkerjogatina;
-  font-family: 'Do Hyeon';font-size: 22px;  
+  font-family: 'MedievalSharp';font-size: 22px;  
 }
 
 button {
@@ -118,7 +121,12 @@ button {
 
 }
 
-.copyright  {
+h4, p {
+  color: white;
+  background-color: $darkerjogatina;
+}
+
+.copyright {
   color: white;
   background-color: $darkjogatina;
 }
@@ -139,7 +147,40 @@ button {
 }
 
 .border {
-  color: #000;
+  color: $white;
 }
 
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: $white;
+}
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;   
+  z-index: 2;
+  
+}
+.divider-text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+  
+}
 
+.btn-facebook {
+  background-color: #405D9D;
+  color: #fff;
+
+}
+.btn-twitter {
+  background-color: #42AEEC;
+  color: #fff;
+}
