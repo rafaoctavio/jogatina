@@ -7380,7 +7380,9 @@ a.text-discord:hover, a.text-discord:focus {
 html,
 body {
   height: 100%;
-  color: #fff; }
+  color: #fff;
+  font-family: 'MedievalSharp';
+  font-size: 22px; }
 
 body {
   display: -ms-flexbox;
