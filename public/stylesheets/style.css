@@ -7387,7 +7387,30 @@ button {
 
 .container {
   margin-top: 100px;
+  margin: 0px;
   color: #fff; }
+
+.interactArea {
+  margin-top: 100px;
+  margin: 0px 0;
+  color: #fff; }
+
+.profileArea img {
+  border-radius: 50%; }
+
+.profileArea {
+  margin-top: 100px;
+  margin: 0px;
+  color: #fff; }
+
+.timelinebox img {
+  border-radius: 50%; }
+
+.friendlist img {
+  border-radius: 50%; }
+
+.findfriend img {
+  border-radius: 50%; }
 
 h4, p {
   color: white;
@@ -7400,11 +7423,11 @@ h4, p {
 .progress {
   margin-bottom: 20px; }
 
-.fakeimg {
+.sharebox {
   height: 200px;
   background: #414141; }
 
-.fakeimgprofile {
+.timelinebox {
   width: 50px;
   height: 50px;
   background: #414141; }

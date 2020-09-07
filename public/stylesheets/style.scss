@@ -104,7 +104,8 @@ $theme-colors: map-merge(
 
 body {
   background-color: $darkerjogatina;
-  font-family: 'MedievalSharp';font-size: 22px;  
+  font-family: 'MedievalSharp';font-size: 22px;
+  
 }
 
 button {
@@ -113,12 +114,36 @@ button {
 
 .container {
   margin-top:100px;
+  margin: 0px;
   color:$white;
   
 }
 
-.profileimg {
+.interactArea {
+  margin-top:100px;
+  margin: 0px 0;
+  color:$white;
+}
 
+.profileArea img {
+  border-radius: 50%;
+}
+
+.profileArea{
+  margin-top:100px;
+  margin: 0px;
+  color:$white;
+}
+
+.timelinebox img {
+  border-radius: 50%;
+}
+
+.friendlist img {
+  border-radius: 50%;
+}
+.findfriend img {
+  border-radius: 50%;
 }
 
 h4, p {
@@ -135,12 +160,12 @@ h4, p {
   margin-bottom: 20px;
 }
 
-.fakeimg {
+.sharebox {
   height: 200px;
   background:$darkjogatina;
 }
 
-.fakeimgprofile {
+.timelinebox {
   width: 50px;  
   height: 50px;
   background:$darkjogatina;
