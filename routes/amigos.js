@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var amigosController = require("../controller/amigosController");
 
-router.get('/amigos', function(req, res, next) {
-  res.render('amigos', {amigos});
-});
+router.get('/', amigosController.index);
+
+ 
 
 module.exports = router;
