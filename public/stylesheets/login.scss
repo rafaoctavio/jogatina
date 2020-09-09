@@ -111,6 +111,11 @@ body {
 
 }
 
+.form-control {
+  border: 1px solid $redishjogatina;
+  
+}
+
 .form-signin {
   background-color: $darkerjogatina;
   border-radius: 15px 15px 15px 15px;
@@ -140,14 +145,20 @@ body {
 
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
 
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
 
 
@@ -160,7 +171,6 @@ body {
   font-size: 14px;
 
 }
-
 
 .checkbox {
   font-size: 12px;

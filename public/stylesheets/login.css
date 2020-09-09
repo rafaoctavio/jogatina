@@ -7398,6 +7398,9 @@ body {
   padding-top: 40px;
   padding-bottom: 40px; }
 
+.form-control {
+  border: 1px solid #ff0000; }
+
 .form-signin {
   background-color: #252525;
   border-radius: 15px 15px 15px 15px;
@@ -7423,13 +7426,19 @@ body {
 
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; }
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px; }
 
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px; }
 
 .btn-primary {
   border-radius: 80px 80px 80px 80px;
