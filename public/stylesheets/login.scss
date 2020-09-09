@@ -1,6 +1,6 @@
 // Color system
 
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -10,14 +10,12 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black: #000 !default;
 $darkjogatina: #414141 !default;
 $darkerjogatina: #252525 !default;
 
 $grays: () !default;
-$grays: map-merge(
-  (
-    "100": $gray-100,
+$grays: map-merge(("100": $gray-100,
     "200": $gray-200,
     "300": $gray-300,
     "400": $gray-400,
@@ -25,21 +23,19 @@ $grays: map-merge(
     "600": $gray-600,
     "700": $gray-700,
     "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
+    "900": $gray-900),
+  $grays);
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 $redishjogatina: #ff0000 !default;
 $redjogatina: #af0404 !default;
 $discord: #7384D4 !default;
@@ -48,52 +44,44 @@ $discord: #7384D4 !default;
 
 
 $colors: () !default;
-$colors: map-merge(
-  (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800
-  ),
-  $colors
-);
+$colors: map-merge(("blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800),
+  $colors);
 
-$primary:       $redishjogatina !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $redjogatina !default;
-$light:         $gray-100 !default;
-$dark:          $darkjogatina !default;
-$darker:        $darkerjogatina !default;
-    
+$primary: $redishjogatina !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $redjogatina !default;
+$light: $gray-100 !default;
+$dark: $darkjogatina !default;
+$darker: $darkerjogatina !default;
+
 
 $theme-colors: () !default;
-$theme-colors: map-merge(
-  (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark,
-    "darker":     $darker,
-    "discord":    $discord
-  ),
-  $theme-colors
-);
+$theme-colors: map-merge(("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "darker": $darker,
+    "discord": $discord),
+  $theme-colors);
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -103,29 +91,45 @@ body {
   height: 100%;
   color: $white;
   font-family: 'Montserrat',
-  sans-serif;
-  font-size: 22px;  
+    sans-serif;
+  font-size: 22px;
 }
 
 body {
+  background-image: url(../images/RPG-a-sigla-que-mudou-o-mundo-dos-jogos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+}
+
+.form-control {
+  border: 1px solid $redishjogatina;
   
 }
 
 .form-signin {
+  background-color: $darkerjogatina;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 3px 3px 8px black;
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 30px;
   margin: auto;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
 }
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -134,74 +138,60 @@ body {
   font-size: 16px;
   color: $white
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  box-shadow: 3px 3px 8px black;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
 
-    .btn-primary {
-      border-radius: 80px 80px 80px 80px;
-      box-shadow: 3px 3px 8px black;
-      letter-spacing: 3px;
-      background-color: black;
-      outline-color: red;
-      font-size: 14px;
 
-      }
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $redjogatina;
+  font-size: 14px;
 
-      .container-login100 {
-        background-image: src('/images/bg-jogatina.jpg');
-        width: 100%;
-        min-height: 100vh;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        background-repeat: no-repeat;
-        /* background-size: cover; */
-        // background-position: center;
-        position: relative;
-        z-index: 1;
-      }
-      .container-login100::before {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: $darkjogatina;
-        pointer-events: none;
-      }
+}
 
-      .wrap-login100 {
-        width: 390px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-        -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-        -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-        -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-      }
+.btn-sucess {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $success;
+  font-size: 14px;
 
-      .checkbox {
-        font-size: 12px;
-      }
+}
 
+.btn-sucess {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $success;
+  font-size: 14px;
+
+}
+
+.checkbox {
+  font-size: 12px;
+}

@@ -7414,7 +7414,7 @@ button {
 
 h4, p {
   color: white;
-  background-color: #252525; }
+  background-color: #414141; }
 
 .copyright {
   color: white;
@@ -7431,6 +7431,91 @@ h4, p {
   width: 50px;
   height: 50px;
   background: #414141; }
+
+.__card {
+  background-color: #414141;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  padding: 0px 40px;
+  transition: 0.2s;
+  margin-bottom: 30px;
+  min-height: 100px;
+  border: 1px solid black;
+  position: relative;
+  box-shadow: 0 5px 10px black;
+  word-wrap: break-word; }
+
+._margin_bottom_none {
+  margin-bottom: 0 !important; }
+
+.copyright {
+  background-color: #414141; }
+
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #af0404;
+  font-size: 14px; }
+
+.btn-success {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #28a745;
+  font-size: 14px; }
+
+.btn-warning {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #ffc107;
+  font-size: 14px; }
+
+.btn-discord {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #7384D4;
+  font-size: 14px; }
+
+.btn-facebook {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #405D9D;
+  font-size: 14px;
+  color: white; }
+
+.btn-twitter {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #42AEEC;
+  font-size: 14px;
+  color: white; }
+
+.btn-secondary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #6c757d;
+  font-size: 14px;
+  color: white; }
+
+.form-control {
+  border: 1px solid #ff0000;
+  border-radius: 40px; }
 
 .border {
   color: #fff; }
@@ -7456,11 +7541,3 @@ h4, p {
   top: 55%;
   left: 0;
   z-index: 1; }
-
-.btn-facebook {
-  background-color: #405D9D;
-  color: #fff; }
-
-.btn-twitter {
-  background-color: #42AEEC;
-  color: #fff; }
