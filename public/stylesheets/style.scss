@@ -145,8 +145,9 @@ button {
 .findfriend img {
   border-radius: 50%;
 }
-
-h4, p {
+h3,
+h4, 
+p {
   color: white;
   background-color: $darkjogatina;
 }
@@ -197,7 +198,7 @@ h4, p {
 }
 
 .copyright{
-  background-color: $darkjogatina;
+  background-color: $darkerjogatina;
   
 }
 
@@ -227,6 +228,7 @@ h4, p {
   background-color: black;
   outline-color: $warning;
   font-size: 14px;
+  color: white;
 }
 
 .btn-discord {
@@ -242,7 +244,7 @@ h4, p {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
-  background-color: black;
+  background-color: $facebook;
   outline-color: $facebook;
   font-size: 14px;
   color:white;
@@ -252,7 +254,7 @@ h4, p {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
-  background-color: black;
+  background-color:$twitter;
   outline-color: $twitter;
   font-size: 14px;
   color:white;
@@ -268,12 +270,39 @@ h4, p {
   color:white;
 }
 
-.form-control {
+.form-control, .custom-select{
   border: 1px solid $redishjogatina;
+  box-shadow: 3px 3px 8px black;
   border-radius: 40px;
+  color: #000;
 }
 
 // Cadastro
+.input-group-text{
+  border-radius: 80px 80px 80px 80px;
+  color: #000;
+}
+
+.form-group input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000!important;
+  opacity: 1;
+}
+.form-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #000 !important;
+ opacity: 1;
+}
+.form-group input::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #000!important;
+ opacity: 1;
+}
+.form-group input:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color: #000 !important;
+ opacity: 1;
+}
+
+.custom-select {
+  border-radius: 80px 80px 80px 80px;
+}
 
 .border {
   color: $white;

@@ -7412,7 +7412,9 @@ button {
 .findfriend img {
   border-radius: 50%; }
 
-h4, p {
+h3,
+h4,
+p {
   color: white;
   background-color: #414141; }
 
@@ -7452,7 +7454,7 @@ h4, p {
   margin-bottom: 0 !important; }
 
 .copyright {
-  background-color: #414141; }
+  background-color: #252525; }
 
 .btn-primary {
   border-radius: 80px 80px 80px 80px;
@@ -7476,7 +7478,8 @@ h4, p {
   letter-spacing: 3px;
   background-color: black;
   outline-color: #ffc107;
-  font-size: 14px; }
+  font-size: 14px;
+  color: white; }
 
 .btn-discord {
   border-radius: 80px 80px 80px 80px;
@@ -7490,7 +7493,7 @@ h4, p {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
-  background-color: black;
+  background-color: #405D9D;
   outline-color: #405D9D;
   font-size: 14px;
   color: white; }
@@ -7499,7 +7502,7 @@ h4, p {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
-  background-color: black;
+  background-color: #42AEEC;
   outline-color: #42AEEC;
   font-size: 14px;
   color: white; }
@@ -7513,9 +7516,38 @@ h4, p {
   font-size: 14px;
   color: white; }
 
-.form-control {
+.form-control, .custom-select {
   border: 1px solid #ff0000;
-  border-radius: 40px; }
+  box-shadow: 3px 3px 8px black;
+  border-radius: 40px;
+  color: #000; }
+
+.input-group-text {
+  border-radius: 80px 80px 80px 80px;
+  color: #000; }
+
+.form-group input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #000 !important;
+  opacity: 1; }
+
+.form-group input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000 !important;
+  opacity: 1; }
+
+.form-group input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000 !important;
+  opacity: 1; }
+
+.form-group input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #000 !important;
+  opacity: 1; }
+
+.custom-select {
+  border-radius: 80px 80px 80px 80px; }
 
 .border {
   color: #fff; }
