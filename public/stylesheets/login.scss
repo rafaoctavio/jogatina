@@ -150,6 +150,7 @@ body {
   border-top-right-radius: 0;
 }
 
+<<<<<<< HEAD
 .btn-primary {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
@@ -160,6 +161,64 @@ body {
 
 }
 
+=======
+    .btn-primary {
+      border-radius: 80px 80px 80px 80px;
+      box-shadow: 3px 3px 8px black;
+      letter-spacing: 3px;
+      background-color: black;
+      outline-color: $redjogatina;
+      font-size: 14px;
+
+      }
+
+      .container-login100 {
+        background-image: src('/images/bg-jogatina.jpg');
+        width: 100%;
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        // background-position: center;
+        position: relative;
+        z-index: 1;
+      }
+      .container-login100::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $darkjogatina;
+        pointer-events: none;
+      }
+
+      .wrap-login100 {
+        width: 390px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .checkbox {
+        font-size: 12px;
+      }
+>>>>>>> bd55116662fd634afcefab9155ec73291427df53
 
 .checkbox {
   font-size: 12px;
