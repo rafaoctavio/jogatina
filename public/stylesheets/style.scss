@@ -44,8 +44,7 @@ $redishjogatina: #ff0000 !default;
 $redjogatina: #af0404 !default;
 $discord: #7384D4 !default;
 $facebook:#405D9D !default;
-
-
+$twitter: #42AEEC !default;
 
 
 
@@ -78,6 +77,8 @@ $danger:        $redjogatina !default;
 $light:         $gray-100 !default;
 $dark:          $darkjogatina !default;
 $darker:        $darkerjogatina !default;
+$face:          $facebook !default;
+$bird:          $twitter !default; 
     
 
 $theme-colors: () !default;
@@ -99,12 +100,11 @@ $theme-colors: map-merge(
 );
 
 
-
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   background-color: $darkerjogatina;
-  font-family: 'MedievalSharp';font-size: 22px;
+  font-family: 'Montserrat', sans-serif;font-size: 22px;
   
 }
 
@@ -145,10 +145,11 @@ button {
 .findfriend img {
   border-radius: 50%;
 }
-
-h4, p {
+h3,
+h4, 
+p {
   color: white;
-  background-color: $darkerjogatina;
+  background-color: $darkjogatina;
 }
 
 .copyright {
@@ -169,6 +170,138 @@ h4, p {
   width: 50px;  
   height: 50px;
   background:$darkjogatina;
+}
+
+//Profile
+
+.__card {
+  background-color: $darkjogatina;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  padding: 0px 40px;
+  transition: 0.2s;
+  margin-bottom: 30px;
+  min-height: 100px;
+  border: 1px solid black;
+  position: relative;
+  box-shadow: 0 5px 10px black;
+  word-wrap: break-word;
+
+}
+
+._margin_bottom_none {
+  margin-bottom: 0 !important;
+
+}
+
+.copyright{
+  background-color: $darkerjogatina;
+  
+}
+
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $redjogatina;
+  font-size: 14px;
+}
+
+.btn-success {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $success;
+  font-size: 14px;
+
+}
+
+.btn-warning {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $warning;
+  font-size: 14px;
+  color: white;
+}
+
+.btn-discord {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $discord;
+  font-size: 14px;
+}
+
+.btn-facebook {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: $facebook;
+  outline-color: $facebook;
+  font-size: 14px;
+  color:white;
+}
+
+.btn-twitter {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color:$twitter;
+  outline-color: $twitter;
+  font-size: 14px;
+  color:white;
+}
+
+.btn-secondary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $secondary;
+  font-size: 14px;
+  color:white;
+}
+
+.form-control, .custom-select{
+  border: 1px solid $redishjogatina;
+  box-shadow: 3px 3px 8px black;
+  border-radius: 40px;
+  color: #000;
+}
+
+// Cadastro
+.input-group-text{
+  border-radius: 80px 80px 80px 80px;
+  color: #000;
+}
+
+.form-group input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000!important;
+  opacity: 1;
+}
+.form-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #000 !important;
+ opacity: 1;
+}
+.form-group input::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #000!important;
+ opacity: 1;
+}
+.form-group input:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color: #000 !important;
+ opacity: 1;
+}
+
+.custom-select {
+  border-radius: 80px 80px 80px 80px;
 }
 
 .border {
@@ -199,14 +332,3 @@ h4, p {
   z-index: 1;
   
 }
-
-.btn-facebook {
-  background-color: #405D9D;
-  color: #fff;
-
-}
-.btn-twitter {
-  background-color: #42AEEC;
-  color: #fff;
-}
-
