@@ -373,20 +373,6 @@ p {
     border-radius: 50%;
     border: 1px solid #dddddd;
 }
-.state{
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: green;
-    border-radius: 50%
-}
-.friend-state{
-    padding: 0.57rem 0.3rem;
-    cursor: pointer;
-    transition: all 0.1s;
-}
-.friend-state:hover{
-    background-color: #f7f7f7;
-}
 
 
 @media (min-width: 1200px){
