@@ -72,6 +72,7 @@ $dark: $darkjogatina !default;
 $darker: $darkerjogatina !default;
 $face: $facebook !default;
 $bird: $twitter !default;
+$redishjogatina: $redishjogatina!default;
 
 
 $theme-colors: () !default;
@@ -85,9 +86,9 @@ $theme-colors: map-merge((
     "light": $light,
     "dark": $dark,
     "darker": $darker,
-    "discord": $discord),
+    "discord": $discord,
+    "redish": $redishjogatina),
   $theme-colors);
-
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -166,7 +167,9 @@ p {
 
 //Profile
 
-.__card {
+
+
+.card {
   background-color: $darkjogatina;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -194,12 +197,12 @@ p {
 
 }
 
-.btn-primary {
+.btn-redish {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
   background-color: black;
-  outline-color: $redjogatina;
+  outline-color: $redishjogatina;
   font-size: 14px;
 }
 

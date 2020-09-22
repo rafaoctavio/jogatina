@@ -28,6 +28,7 @@
   --dark: #414141;
   --darker: #252525;
   --discord: #7384D4;
+  --redish: #ff0000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1336,6 +1337,23 @@ pre {
   .table-hover .table-discord:hover > th {
     background-color: #c5cced; }
 
+.table-redish,
+.table-redish > th,
+.table-redish > td {
+  background-color: #ffb8b8; }
+
+.table-redish th,
+.table-redish td,
+.table-redish thead th,
+.table-redish tbody + tbody {
+  border-color: #ff7a7a; }
+
+.table-hover .table-redish:hover {
+  background-color: #ff9f9f; }
+  .table-hover .table-redish:hover > td,
+  .table-hover .table-redish:hover > th {
+    background-color: #ff9f9f; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2064,6 +2082,32 @@ fieldset:disabled a.btn {
     .show > .btn-discord.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(136, 150, 218, 0.5); }
 
+.btn-redish {
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #ff0000; }
+  .btn-redish:hover {
+    color: #fff;
+    background-color: #d90000;
+    border-color: #cc0000; }
+  .btn-redish:focus, .btn-redish.focus {
+    color: #fff;
+    background-color: #d90000;
+    border-color: #cc0000;
+    box-shadow: 0 0 0 0.2rem rgba(255, 38, 38, 0.5); }
+  .btn-redish.disabled, .btn-redish:disabled {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000; }
+  .btn-redish:not(:disabled):not(.disabled):active, .btn-redish:not(:disabled):not(.disabled).active,
+  .show > .btn-redish.dropdown-toggle {
+    color: #fff;
+    background-color: #cc0000;
+    border-color: #bf0000; }
+    .btn-redish:not(:disabled):not(.disabled):active:focus, .btn-redish:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-redish.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 38, 38, 0.5); }
+
 .btn-outline-primary {
   color: #fff;
   border-color: #fff; }
@@ -2273,6 +2317,27 @@ fieldset:disabled a.btn {
     .btn-outline-discord:not(:disabled):not(.disabled):active:focus, .btn-outline-discord:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-discord.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(115, 132, 212, 0.5); }
+
+.btn-outline-redish {
+  color: #ff0000;
+  border-color: #ff0000; }
+  .btn-outline-redish:hover {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000; }
+  .btn-outline-redish:focus, .btn-outline-redish.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5); }
+  .btn-outline-redish.disabled, .btn-outline-redish:disabled {
+    color: #ff0000;
+    background-color: transparent; }
+  .btn-outline-redish:not(:disabled):not(.disabled):active, .btn-outline-redish:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-redish.dropdown-toggle {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000; }
+    .btn-outline-redish:not(:disabled):not(.disabled):active:focus, .btn-outline-redish:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-redish.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3819,6 +3884,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(115, 132, 212, 0.5); }
 
+.badge-redish {
+  color: #fff;
+  background-color: #ff0000; }
+  a.badge-redish:hover, a.badge-redish:focus {
+    color: #fff;
+    background-color: #cc0000; }
+  a.badge-redish:focus, a.badge-redish.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -3944,6 +4019,15 @@ input[type="button"].btn-block {
     border-top-color: #c5cced; }
   .alert-discord .alert-link {
     color: #2a304d; }
+
+.alert-redish {
+  color: #850000;
+  background-color: #ffcccc;
+  border-color: #ffb8b8; }
+  .alert-redish hr {
+    border-top-color: #ff9f9f; }
+  .alert-redish .alert-link {
+    color: #520000; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4243,6 +4327,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #3c456e;
     border-color: #3c456e; }
+
+.list-group-item-redish {
+  color: #850000;
+  background-color: #ffb8b8; }
+  .list-group-item-redish.list-group-item-action:hover, .list-group-item-redish.list-group-item-action:focus {
+    color: #850000;
+    background-color: #ff9f9f; }
+  .list-group-item-redish.list-group-item-action.active {
+    color: #fff;
+    background-color: #850000;
+    border-color: #850000; }
 
 .close {
   float: right;
@@ -4946,6 +5041,14 @@ button.bg-discord:hover,
 button.bg-discord:focus {
   background-color: #4c62c8 !important; }
 
+.bg-redish {
+  background-color: #ff0000 !important; }
+
+a.bg-redish:hover, a.bg-redish:focus,
+button.bg-redish:hover,
+button.bg-redish:focus {
+  background-color: #cc0000 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -5011,6 +5114,9 @@ button.bg-discord:focus {
 
 .border-discord {
   border-color: #7384D4 !important; }
+
+.border-redish {
+  border-color: #ff0000 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7284,6 +7390,12 @@ a.text-darker:hover, a.text-darker:focus {
 a.text-discord:hover, a.text-discord:focus {
   color: #3b52c0 !important; }
 
+.text-redish {
+  color: #ff0000 !important; }
+
+a.text-redish:hover, a.text-redish:focus {
+  color: #b30000 !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7435,7 +7547,7 @@ p {
   height: 50px;
   background: #414141; }
 
-.__card {
+.card {
   background-color: #414141;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -7457,12 +7569,12 @@ p {
 .copyright {
   background-color: #252525; }
 
-.btn-primary {
+.btn-redish {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
   background-color: black;
-  outline-color: #af0404;
+  outline-color: #ff0000;
   font-size: 14px; }
 
 .btn-success {
