@@ -1,6 +1,6 @@
 // Color system
 
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -10,14 +10,12 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black: #000 !default;
 $darkjogatina: #414141 !default;
 $darkerjogatina: #252525 !default;
 
 $grays: () !default;
-$grays: map-merge(
-  (
-    "100": $gray-100,
+$grays: map-merge(("100": $gray-100,
     "200": $gray-200,
     "300": $gray-300,
     "400": $gray-400,
@@ -25,21 +23,19 @@ $grays: map-merge(
     "600": $gray-600,
     "700": $gray-700,
     "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
+    "900": $gray-900),
+  $grays);
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 $redishjogatina: #ff0000 !default;
 $redjogatina: #af0404 !default;
 $discord: #7384D4 !default;
@@ -49,91 +45,85 @@ $twitter: #42AEEC !default;
 
 
 $colors: () !default;
-$colors: map-merge(
-  (
-    "blue":       $blue,
-    "indigo":     $indigo,
-    "purple":     $purple,
-    "pink":       $pink,
-    "red":        $red,
-    "orange":     $orange,
-    "yellow":     $yellow,
-    "green":      $green,
-    "teal":       $teal,
-    "cyan":       $cyan,
-    "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800
-  ),
-  $colors
-);
+$colors: map-merge((
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800),
+  $colors);
 
-$primary:       $redishjogatina !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $redjogatina !default;
-$light:         $gray-100 !default;
-$dark:          $darkjogatina !default;
-$darker:        $darkerjogatina !default;
-$face:          $facebook !default;
-$bird:          $twitter !default; 
-    
+$primary: $white !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $redjogatina !default;
+$light: $gray-100 !default;
+$dark: $darkjogatina !default;
+$darker: $darkerjogatina !default;
+$face: $facebook !default;
+$bird: $twitter !default;
+$redishjogatina: $redishjogatina!default;
+
 
 $theme-colors: () !default;
-$theme-colors: map-merge(
-  (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark,
-    "darker":     $darker,
-    "discord":    $discord
-    
-  ),
-  $theme-colors
-);
-
+$theme-colors: map-merge((
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "darker": $darker,
+    "discord": $discord,
+    "redish": $redishjogatina),
+  $theme-colors);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   background-color: $darkerjogatina;
-  font-family: 'Montserrat', sans-serif;font-size: 22px;
-  color:#ffffff
-  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
 }
 
 button {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .container {
-  margin-top:100px;
+  margin-top: 100px;
   margin: 0px;
-  color:$white;
-  
+  color: $white;
+
 }
 
 .interactArea {
-  margin-top:100px;
+  margin-top: 100px;
   margin: 0px 0;
-  color:$white;
+  color: $white;
 }
 
 .profileArea img {
   border-radius: 50%;
 }
 
-.profileArea{
-  margin-top:100px;
+.profileArea {
+  margin-top: 100px;
   margin: 0px;
-  color:$white;
+  color: $white;
 }
 
 .timelinebox img {
@@ -143,11 +133,13 @@ button {
 .friendlist img {
   border-radius: 50%;
 }
+
 .findfriend img {
   border-radius: 50%;
 }
+
 h3,
-h4, 
+h4,
 p {
   color: white;
   background-color: $darkjogatina;
@@ -164,18 +156,20 @@ p {
 
 .sharebox {
   height: 200px;
-  background:$darkjogatina;
+  background: $darkjogatina;
 }
 
 .timelinebox {
-  width: 50px;  
+  width: 50px;
   height: 50px;
-  background:$darkjogatina;
+  background: $darkjogatina;
 }
 
 //Profile
 
-.__card {
+
+
+.card {
   background-color: $darkjogatina;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -198,17 +192,17 @@ p {
 
 }
 
-.copyright{
+.copyright {
   background-color: $darkerjogatina;
-  
+
 }
 
-.btn-primary {
+.btn-redish {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
   background-color: black;
-  outline-color: $redjogatina;
+  outline-color: $redishjogatina;
   font-size: 14px;
 }
 
@@ -248,17 +242,17 @@ p {
   background-color: $facebook;
   outline-color: $facebook;
   font-size: 14px;
-  color:white;
+  color: white;
 }
 
 .btn-twitter {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
   letter-spacing: 3px;
-  background-color:$twitter;
+  background-color: $twitter;
   outline-color: $twitter;
   font-size: 14px;
-  color:white;
+  color: white;
 }
 
 .btn-secondary {
@@ -268,10 +262,11 @@ p {
   background-color: black;
   outline-color: $secondary;
   font-size: 14px;
-  color:white;
+  color: white;
 }
 
-.form-control, .custom-select{
+.form-control,
+.custom-select {
   border: 1px solid $redishjogatina;
   box-shadow: 3px 3px 8px black;
   border-radius: 40px;
@@ -279,26 +274,33 @@ p {
 }
 
 // Cadastro
-.input-group-text{
+.input-group-text {
   border-radius: 80px 80px 80px 80px;
   color: #000;
 }
 
-.form-group input::-webkit-input-placeholder { /* WebKit browsers */
-  color: #000!important;
+.form-group input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #000 !important;
   opacity: 1;
 }
-.form-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
- color: #000 !important;
- opacity: 1;
+
+.form-group input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000 !important;
+  opacity: 1;
 }
-.form-group input::-moz-placeholder { /* Mozilla Firefox 19+ */
- color: #000!important;
- opacity: 1;
+
+.form-group input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000 !important;
+  opacity: 1;
 }
-.form-group input:-ms-input-placeholder { /* Internet Explorer 10+ */
- color: #000 !important;
- opacity: 1;
+
+.form-group input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #000 !important;
+  opacity: 1;
 }
 
 .custom-select {
@@ -316,13 +318,15 @@ p {
   margin-bottom: 15px;
   color: $white;
 }
+
 .divider-text span {
   padding: 7px;
   font-size: 12px;
-  position: relative;   
+  position: relative;
   z-index: 2;
-  
+
 }
+
 .divider-text:after {
   content: "";
   position: absolute;
@@ -331,69 +335,63 @@ p {
   top: 55%;
   left: 0;
   z-index: 1;
-  
+
 }
 
 //>
 
-.h7{
-    font-size: 0.87rem;
-    font-weight: 600;
-}
-.h8{
-    font-size: 0.78rem;
-    font-weight: 600;
+.h7 {
+  font-size: 0.87rem;
+  font-weight: 600;
 }
 
-.offset-fixed{
-    position: fixed;
-    top: 0;
-    bottom: 0;
+.h8 {
+  font-size: 0.78rem;
+  font-weight: 600;
 }
-.f-left{
-    left: 0
+
+.offset-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
-.f-right{
-    right: 0;
+
+.f-left {
+  left: 0
 }
-.side-left{
-    margin-top: 4rem;
-    margin-left: 8.07rem
+
+.f-right {
+  right: 0;
 }
-.side-right{
-    margin-top: 4rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: calc(100vh - 7.5rem);
+
+.side-left {
+  margin-top: 4rem;
+  margin-left: 8.07rem;
+  background-color: $darkjogatina;
 }
-.img-circle{
-    width: 5rem;
-    height: 3.1rem;
-    background-color: #f7f7f7;
-    border-radius: 50%;
-    border: 1px solid #dddddd;
+
+.side-right {
+  margin-top: 4rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 7.5rem);
 }
-.state{
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: green;
-    border-radius: 50%
-}
-.friend-state{
-    padding: 0.57rem 0.3rem;
-    cursor: pointer;
-    transition: all 0.1s;
-}
-.friend-state:hover{
-    background-color: #f7f7f7;
+
+.img-circle {
+  width: 5rem;
+  height: 3.1rem;
+  background-color: $darkjogatina;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
 }
 
 
-@media (min-width: 1200px){
-    .container {
-        max-width: 1125px;
-    }
-    .c-navbar{
-        margin-left: 7rem !important;
-    }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1125px;
+  }
+
+  .c-navbar {
+    margin-left: 7rem !important;
+  }
 }
