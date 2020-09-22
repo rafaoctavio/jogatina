@@ -4,6 +4,7 @@ var loginController = require("../controller/loginController");
 
 router.get('/', loginController.index);
 
+
  
 
 module.exports = router;
