@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
   <link rel="stylesheet" href="/stylesheets/login.css">
-  <link rel="icon" type="image/png" href="/images/favicon_1.png"/>
+  <link rel="icon" type="image/png" href="/images/favicon_1.png" />
   <title>Jogatina | A Rede Social Gamer - Login</title>
 </head>
 
@@ -26,31 +26,77 @@
         font-size: 3.5rem;
       }
     }
+
+    html,
+    body {
+      width: 300vw;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #videoBG {
+      position: fixed;
+      z-index: -1;
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+      #videoBG {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+      #videoBG {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #videoBG {
+        display: none;
+      }
+
+      body {
+        background: url('poster.jpg');
+        background-size: cover;
+      }
+    }
   </style>
 
 
-  </head>
-  <form class="form-signin">
-        <img class="col-lg-12 mb-4" src="/images/Jogatina_Header.png" alt="" width="100%" height="auto">
-        <h1 class="h5 mb-3 font-weight-normal"><b>Login</b></h1>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control bg-dark" placeholder="Email" required autofocus>
-        <hr>
-        <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" id="inputPassword" class="form form-control bg-dark" placeholder="Senha" required>
-        <div class="checkbox mt-4 mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Lembrar senha
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit"><b>ENTRAR</b></button>
-        <p class="text-center mt-5 mb-3 text-muted">Jogatina 2020<sup>&reg;</sup>
-      </form>
 
-    
-      <script src="/javascripts/jquery.min.js"></script>
-      <script src="/javascripts/bootstrap.bundle.min.js"></script>
-      <script src="https://kit.fontawesome.com/b5ed3fff72.js" crossorigin="anonymous"></script>
+  </head>
+
+  
+    <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+      <source src="/images/worldOfWarcraft.mp4" type="video/mp4">
+    </video>
+  
+
+  <form class="form-signin">
+    <!--<img class="col-lg-12 mb-4" src="/images/Jogatina_Header.png" alt="" width="100%" height="auto">-->
+    <h1 class="h5 mb-4 font-weight-normal"><b>Login</b></h1>
+    <label for="inputEmail" class="sr-only">Email</label>
+    <input type="email" id="inputEmail" class="form-control bg-dark" placeholder="Email" required autofocus>
+    <hr>
+    <label for="inputPassword" class="sr-only">Senha</label>
+    <input type="password" id="inputPassword" class="form form-control bg-dark" placeholder="Senha" required>
+    <div class="checkbox mt-4 mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Lembrar senha
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit"><b>ENTRAR</b></button>
+    <p class="text-center mt-5 mb-3 text-muted">Jogatina 2020<sup>&reg;</sup>
+  </form>
+
+
+
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/b5ed3fff72.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
