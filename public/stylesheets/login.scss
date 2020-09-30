@@ -96,7 +96,7 @@ $theme-colors: map-merge(("primary": $primary,
 }
 
 .Carai {
-  font-kerning: 10px;
+  
 }
 
 html,
@@ -113,7 +113,7 @@ body {
 }
 
 body {
-  background-image: url(../images/RPG-a-sigla-que-mudou-o-mundo-dos-jogos.jpg);
+  background-image: url(../images/worldOfWarcraft.mp4);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
   font-size: 12px;
 }
 
-#videoBG {
+.videoBG {
   position: fixed;
   z-index: -1;
 }
