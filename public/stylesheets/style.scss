@@ -195,6 +195,16 @@ p {
 
 }
 
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $primary;
+  font-size: 14px;
+  color:#ffffff;
+}
+
 .btn-redish {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
@@ -341,8 +351,6 @@ p {
 .page-wrap {
   min-height: 100vh;
 }
-
-
 
 //>
 
