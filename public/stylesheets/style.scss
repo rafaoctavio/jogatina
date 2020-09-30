@@ -167,8 +167,6 @@ p {
 
 //Profile
 
-
-
 .card {
   background-color: $darkjogatina;
   -webkit-border-radius: 7px;
@@ -195,6 +193,16 @@ p {
 .copyright {
   background-color: $darkerjogatina;
 
+}
+
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $primary;
+  font-size: 14px;
+  color:#ffffff;
 }
 
 .btn-redish {
@@ -336,6 +344,12 @@ p {
   left: 0;
   z-index: 1;
 
+}
+
+// Not-Found
+
+.page-wrap {
+  min-height: 100vh;
 }
 
 //>

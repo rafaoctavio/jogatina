@@ -7569,6 +7569,15 @@ p {
 .copyright {
   background-color: #252525; }
 
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #fff;
+  font-size: 14px;
+  color: #ffffff; }
+
 .btn-redish {
   border-radius: 80px 80px 80px 80px;
   box-shadow: 3px 3px 8px black;
@@ -7687,6 +7696,9 @@ p {
   top: 55%;
   left: 0;
   z-index: 1; }
+
+.page-wrap {
+  min-height: 100vh; }
 
 .h7 {
   font-size: 0.87rem;
