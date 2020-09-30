@@ -5,7 +5,7 @@ Uma rede para contraternizar e trocar idéias, experiências e diversão sobre R
 
 >(Projeto Integrador Curso Full Stack Development - Escola Digital House)
 
-![](tetris.gif)
+![](./public/images/Jogatina_Header.png)
 
 
 ## Tecnologias Usadas
