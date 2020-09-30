@@ -10,7 +10,7 @@ Uma rede para contraternizar e trocar idéias, experiências e diversão sobre R
 
 ## Tecnologias Usadas
 
-HTML5, CSS3, Javascript, NodeJS
+HTML5, CSS3, Javascript, Bootstrap 4, Sass, NodeJS, ExpressJS, MySQL
 
 ## Desenvolvimento
 
