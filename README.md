@@ -28,8 +28,8 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
     * 
     * 
 * Sprint 2
-    *Sprint Front-end
-    *Objetivo: Finalizar front-end de todo o site.
+    -Sprint Front-end
+    -Objetivo: Finalizar front-end de todo o site.
     *Requisitos : Para conclusão dessa sprint será necessário realizar todo o front-end do site e suas adaptações
     *1: Páginas responsivas.
     *2: Demais páginas HTML do site.
