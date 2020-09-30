@@ -7688,6 +7688,9 @@ p {
   left: 0;
   z-index: 1; }
 
+.page-wrap {
+  min-height: 100vh; }
+
 .h7 {
   font-size: 0.87rem;
   font-weight: 600; }

@@ -167,8 +167,6 @@ p {
 
 //Profile
 
-
-
 .card {
   background-color: $darkjogatina;
   -webkit-border-radius: 7px;
@@ -337,6 +335,14 @@ p {
   z-index: 1;
 
 }
+
+// Not-Found
+
+.page-wrap {
+  min-height: 100vh;
+}
+
+
 
 //>
 
