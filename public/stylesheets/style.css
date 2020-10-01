@@ -7645,6 +7645,9 @@ p {
   border-radius: 40px;
   color: #000; }
 
+.navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger6.svg?color=000"); }
+
 .input-group-text {
   border-radius: 80px 80px 80px 80px;
   color: #000; }
