@@ -399,6 +399,12 @@ mark,
   max-width: 100%;
   height: auto; }
 
+  .img-not-found{
+    background-image: ();
+    background-image: url(../images/error\ 404.gif);
+    background-size: 100%;
+  }
+
 .figure {
   display: inline-block; }
 
