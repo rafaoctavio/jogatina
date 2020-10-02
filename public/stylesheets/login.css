@@ -7385,15 +7385,14 @@ a.text-discord:hover, a.text-discord:focus {
   -ms-user-select: none;
   user-select: none; }
 
-html,
+html {
+  background-color: #252525; }
+
 body {
   height: 100%;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  overflow: hidden;
-  width: 300vw;
-  height: 100vh;
   margin: 0;
   background-color: #252525;
   background-repeat: no-repeat;

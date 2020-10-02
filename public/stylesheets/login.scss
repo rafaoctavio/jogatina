@@ -96,16 +96,16 @@ $theme-colors: map-merge(("primary": $primary,
 }
 
 
-html,
+html {
+  background-color: $darkerjogatina;
+}
+
 body {
   height: 100%;
   color: $white;
   font-family: 'Montserrat',
   sans-serif;
   font-size: 22px;
-  overflow: hidden;
-  width: 300vw;
-  height: 100vh;
   margin: 0;
   background-color: $darkerjogatina;
   background-repeat: no-repeat;

@@ -90,7 +90,10 @@ $theme-colors: map-merge((
     "redish": $redishjogatina),
   $theme-colors);
 
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
 
 body {
   background-color: $darkerjogatina;
