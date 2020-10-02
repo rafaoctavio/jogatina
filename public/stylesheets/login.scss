@@ -101,16 +101,13 @@ body {
   height: 100%;
   color: $white;
   font-family: 'Montserrat',
-    sans-serif;
+  sans-serif;
   font-size: 22px;
   overflow: hidden;
   width: 300vw;
   height: 100vh;
   margin: 0;
-}
-
-body {
-  background-image: url(../images/worldOfWarcraft.mp4);
+  background-color: $darkerjogatina;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,8 +119,8 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
+
 
 .form-control {
   border: 1px solid $redishjogatina;
@@ -131,7 +128,7 @@ body {
 }
 
 .form-signin {
-  background-color: $darkerjogatina;
+  background-color: $darkjogatina;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px 8px black;
   width: 100%;

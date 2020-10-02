@@ -281,6 +281,10 @@ p {
   color: #000;
 }
 
+.navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+  }
+
 // Cadastro
 .input-group-text {
   border-radius: 80px 80px 80px 80px;
@@ -352,7 +356,7 @@ p {
   min-height: 100vh;
 }
 
-//>
+// Cards de Post
 
 .h7 {
   font-size: 0.87rem;
