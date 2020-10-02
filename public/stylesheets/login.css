@@ -7395,7 +7395,7 @@ body {
   width: 300vw;
   height: 100vh;
   margin: 0;
-  background-color: #414141;
+  background-color: #252525;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7412,7 +7412,7 @@ body {
   border: 1px solid #ff0000; }
 
 .form-signin {
-  background-color: #252525;
+  background-color: #414141;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px 8px black;
   width: 100%;
