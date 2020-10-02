@@ -7547,6 +7547,9 @@ p {
   height: 50px;
   background: #414141; }
 
+.dropdown-item {
+  color: #ffffff; }
+
 .card {
   background-color: #414141;
   -webkit-border-radius: 7px;
