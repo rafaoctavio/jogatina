@@ -1,42 +1,46 @@
 
-<header>
-    <div class="jumbotron text-center bg-darkjogatina">
-        <h1 class="bg-darkjogatina">IMAGEM FODA</h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/img/Jogatina_small.png" alt="jogatinalogo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+ <header class="sticky-top">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Nome <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <img class="profileimg" src="">
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Comunidades</a>
-                        <a class="dropdown-item" href="#">Amigos</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sobre</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-darker my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container c-navbar">
+            <a class="navbar-brand" href="#">
+                <img src="/images/jogatina_header.png" alt="jogatinalogo" width="200px" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle bg-dark" src="/images/profile.jpg" width="30" alt="">
+                        </a>
+                        <div class="dropdown-menu bg bg-dark" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fas fa-mask"></i> Meus Personagens</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user-friends"></i> Comunidades</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-dice"></i> Tabuleiros</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Editar Perfil</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/amigos"><i class="fas fa-users"></i> Amigos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-discord"></i> Discord</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-0" type="search" placeholder="Buscar"
+                        aria-label="Search">
+                </form>
+            </div>
     </nav>
 </header>

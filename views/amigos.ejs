@@ -1,144 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="icon" type="image/png" href="/images/favicon_1.png"/>
-    <title>Jogatina | A Rede Social Gamer - Amigos</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <title>Jogatina | A Rede Social de RPG - Perfil</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-            <a class="navbar-brand" href="#">
-                <img src="/images/Jogatina_Header.png">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Nome <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <img class="profileimg" src="">
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Comunidades</a>
-                            <a class="dropdown-item" href="#">Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Sobre</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
-
-    </header>
+    <%- include('./partials/header')%>
 
     <main>
-        <div class="mt-5 container">
-            <div class="ml-3 row">
-                <div class="__card _margin_bottom_none profileArea col-sm-2">
-                    <div>
-                        <p><img src="/images/profile.jpg" alt="" width="50px" height="50px"></p>
-                        <p class="divider-text"></p>
-                    </div>
-                    <h3>Personagens</h3>
-                    <p>Barbaro</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100">Vitalidade</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100">Mana</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35"
-                            aria-valuemin="0" aria-valuemax="100">Inteligência</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Força</div>
-                    </div>
-                    <p>Mago</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65"
-                            aria-valuemin="0" aria-valuemax="100">Vitalidade</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Mana</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100">Inteligência</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40"
-                            aria-valuemin="0" aria-valuemax="100">Força</div>
-                    </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+ 
+                <div class="mt-5 col-lg-7 offset-lg-2" >
+                    <div class="row">
 
-                    <hr class="border d-sm-none">
-                </div>
-                <div class="mb-5 row">
-                    <div class="ml-5 col">
-                        <div class="__card _margin_bottom_none">
-                            <h2>Amigos</h2>
-                                <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar"
-                                    aria-label="Search">
-                                <button class="btn btn-primary mt-3" type="submit">Buscar</button>
-                            </div>
-                            <br>
-                            <div class="__card _margin_bottom_none">
-                            <h3>Ultimos contatos</h3>
-                            <div class=" findfriend row">
-                                <img src="/images/Amigo2.jpg" class="img-rounded" style="width:10%">
-                                <div class="caption">
-                                    <p>Fallen</p>
+                        <div class="col-lg-4">
+
+
+                            <div class="card my-3 bg-dark">
+                                <div class="card-body p-2">
+                                    <div class="h6"><img class="rounded-circle bg-dark" src="/images/arqueira.png" width="40" height="auto" alt="">Personagens</div>
+                                    <!-- -->
+
+                                    <p>Barbaro</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Vitalidade</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Mana</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 35%"
+                                            aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Inteligência</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Força</div>
+                                    </div>
+                                    <p>Mago</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
+                                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Vitalidade</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Mana</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Inteligência</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Força</div>
+                                    </div>
+
+                                    <a class="btn btn-link" href="#">Mais...</a>
+
                                 </div>
-                                </div>
                             </div>
-                            <br>
-                        <div class="__card _margin_bottom_none">
-                            <h2>Procurar Players</h2>
-                            <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Procurar"
-                                aria-label="Search">
-                            <button class="btn btn-primary mt-3" type="submit">Buscar</button>
                         </div>
-                        <br>
-                        <div class="__card _margin_bottom_none">
-                            <div class=" friendlist col-sm-4">
-                            <h2>Lista de Amigos</h2>
-                            <div class="row">
-                                <img src="/images/Amigo2.jpg" style="width:20%">
-                                <div class="caption">
-                                    <p>Fallen</p>
+                        <div class="col-12 col-lg-8">
+    
+                            <div class="card px-0 my-3 bg-dark">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs nav-fill">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Jogue o D20!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body py-2 bg-dark">
+                                    <div class="d-flex bg-dark">
+                                        <div>
+                                            <img class="rounded-circle bg-dark" width="50" src="/images/profile.jpg">
+                                        </div>
+                                        <div class="col">
+                                            <form action="#">
+                                                <div class="form-group mb-0">
+                                                    <label class="sr-only" for="exampleFormControlTextarea1">Example textarea</label>
+                                                    <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="2" placeholder="O que você tem em mente, jogador?"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-redish"> <i class="fa fa-list"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-warning"><i class="fa fa-picture-o"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-success"><i class="fa fa-user-plus"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-discord"><i class="fab fa-discord" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- ITEM -->
+                            <div class="card my-3 bg-dark">
+                                <div class="card-header bg-dark border-0 py-2">
+                                    <div class="d-flex justify-content-center bg-dark">
+                                        <div class="d-flex justify-content-between bg-dark">
+                                            <a href="#">
+                                            <img class="rounded-circle bg-dark" src="/images/amigos.jpg" width="100" height="100" alt="" />
+                                            </a>
+                                            <div class="ml-3 bg-dark">
+                                                <div class="h1 m-0 mt-3 bg-dark">
+                                                    <a href="#">Meus Amigos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <!-- ITEM -->
+ 
+                            <!-- ITEM -->
+                            <div class="card my-3 bg-dark border-0 py-3">
+                                <div class="card-header bg-dark border-0 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#">
+                                                <img class="rounded-circle" src="/images/vitor.jpg" width="60" alt="" />
+                                            </a>
+                                            <div class="ml-3 mt-3">
+                                                <div class="h4 m-0">
+                                                    <a href="#">Victor</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link dropdown-toggle mt-3" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                            <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Enviar mensagem</a>
+                                                <a class="dropdown-item" href="#">Convidar para partida</a>
+                                                <a class="dropdown-item" href="#">Ver Personagens</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div
+                            <!-- ITEM -->
+                            <div class="card my-3 bg-dark border-0 py-3">
+                                <div class="card-header bg-dark border-0 py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#">
+                                                <img class="rounded-circle" src="/images/fallen.jpg" width="60" alt="" />
+                                            </a>
+                                            <div class="ml-3 mt-3">
+                                                <div class="h4 m-0">
+                                                    <a href="#">Fallen</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link dropdown-toggle mt-3" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                            <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Enviar mensagem</a>
+                                                <a class="dropdown-item" href="#">Convidar para partida</a>
+                                                <a class="dropdown-item" href="#">Ver Personagens</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div><!-- ITEM -->
+    
+                        </div>
                         
-                                </div>
-                            </div>
-                        </div>
+    
+    
+                            
+                        
                     </div>
-                 </div>
                 </div>
-            </div>
-        </div>
+                 
+    </main>
 
 
         <%- include('./partials/footer')%>

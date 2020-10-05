@@ -90,7 +90,10 @@ $theme-colors: map-merge((
     "redish": $redishjogatina),
   $theme-colors);
 
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
 
 body {
   background-color: $darkerjogatina;
@@ -165,9 +168,11 @@ p {
   background: $darkjogatina;
 }
 
+.dropdown-item {
+  color: #ffffff;
+}
+
 //Profile
-
-
 
 .card {
   background-color: $darkjogatina;
@@ -195,6 +200,16 @@ p {
 .copyright {
   background-color: $darkerjogatina;
 
+}
+
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: $primary;
+  font-size: 14px;
+  color:#ffffff;
 }
 
 .btn-redish {
@@ -273,6 +288,10 @@ p {
   color: #000;
 }
 
+.navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+  }
+
 // Cadastro
 .input-group-text {
   border-radius: 80px 80px 80px 80px;
@@ -338,7 +357,13 @@ p {
 
 }
 
-//>
+// Not-Found
+
+.page-wrap {
+  min-height: 100vh;
+}
+
+// Cards de Post
 
 .h7 {
   font-size: 0.87rem;

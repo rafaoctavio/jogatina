@@ -7547,6 +7547,9 @@ p {
   height: 50px;
   background: #414141; }
 
+.dropdown-item {
+  color: #ffffff; }
+
 .card {
   background-color: #414141;
   -webkit-border-radius: 7px;
@@ -7568,6 +7571,15 @@ p {
 
 .copyright {
   background-color: #252525; }
+
+.btn-primary {
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 3px 3px 8px black;
+  letter-spacing: 3px;
+  background-color: black;
+  outline-color: #fff;
+  font-size: 14px;
+  color: #ffffff; }
 
 .btn-redish {
   border-radius: 80px 80px 80px 80px;
@@ -7636,6 +7648,9 @@ p {
   border-radius: 40px;
   color: #000; }
 
+.navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger6.svg?color=000"); }
+
 .input-group-text {
   border-radius: 80px 80px 80px 80px;
   color: #000; }
@@ -7687,6 +7702,9 @@ p {
   top: 55%;
   left: 0;
   z-index: 1; }
+
+.page-wrap {
+  min-height: 100vh; }
 
 .h7 {
   font-size: 0.87rem;

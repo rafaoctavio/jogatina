@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/cadastro', cadastroRouter);
 app.use('/amigos', amigosRouter);
 app.use('/profile', profileRouter);
-app.use('/login', loginRouter)
+app.use('/', loginRouter)
 app.use((req,res)=>{
   return res.status(404).render('not-found');
 })

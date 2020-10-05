@@ -86,17 +86,28 @@ $theme-colors: map-merge(("primary": $primary,
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-html,
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+html {
+  background-color: $darkerjogatina;
+}
+
 body {
   height: 100%;
   color: $white;
   font-family: 'Montserrat',
-    sans-serif;
+  sans-serif;
   font-size: 22px;
-}
-
-body {
-  background-image: url(../images/RPG-a-sigla-que-mudou-o-mundo-dos-jogos.jpg);
+  margin: 0;
+  background-color: $darkerjogatina;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -108,8 +119,8 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
+
 
 .form-control {
   border: 1px solid $redishjogatina;
@@ -117,7 +128,7 @@ body {
 }
 
 .form-signin {
-  background-color: $darkerjogatina;
+  background-color: $darkjogatina;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 3px 3px 8px black;
   width: 100%;
@@ -190,4 +201,41 @@ body {
 
 .checkbox {
   font-size: 12px;
+}
+
+.videoBG {
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+
+
+  body {
+    background: url('poster.jpg');
+    background-size: cover;
+  }
 }
