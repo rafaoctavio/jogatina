@@ -1,7 +1,7 @@
-const cadastroController = {
+const CadastroController = {
     index: (req, res) => {
         return res.render("cadastro");
     }
 }
 
-module.exports = cadastroController;
+module.exports = CadastroController;

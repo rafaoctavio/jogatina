@@ -1,7 +1,7 @@
-const loginController = {
+const LoginController = {
     index: (req, res) => {
         return res.render("login");
     }
 }
 
-module.exports = loginController;
+module.exports = LoginController;
