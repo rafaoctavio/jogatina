@@ -4,7 +4,7 @@ module.exports = (sequelize,DataType) => {
             type:DataType.INTENGER,
             primaryKey: true, 
             autoIncrement: true,
-            allownull: false
+            allownull: false 
         },
 
         usuarios_id: {
