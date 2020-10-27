@@ -3,22 +3,41 @@ module.exports = (sequelize,DataType) => {
         id: {
             type:DataType.INTENGER,
             primaryKey: true, 
-            autoIncrement: true
+            autoIncrement: true,
+            unsigned: true,
         },
-        nome:DataType.STRING,
+        nome: {
+            type:DataType.STRING,
+            allowNull: false,
+        },
         email: {
             type: DataType.STRING,
             allowNull: false,
         },
         senha:  {
             type: DataType.STRING,
-        allowNull: false,
-    },
+            allowNull: false,
+        },
+        data_nascimento: {
+            type:DataType.DATE,
+            allowNull: false
+        },
+        genero: {
+            type:DataType.DATE,
+            allowNull: false
+        },
+
+        imagem_perfil: {
+            type:DataType.DATE,
+            allowNull: false
+        },
     
+    },
+    {
         tableName: 'usuario', 
         timeStamps: false
-    })   
+    }); 
 
-    return usuario
+    return usuario;
 
 }

@@ -1,6 +1,8 @@
+
+
 const ProfileController = {
     home: (req, res) => {
-        return res.render("/profile/home.ejs");
+        return res.render('profile/home');
     }
 }
 
