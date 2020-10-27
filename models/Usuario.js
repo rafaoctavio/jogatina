@@ -1,9 +1,6 @@
-const { data } = require("jquery")
-const { DATE } = require("sequelize/types")
-
 module.exports = (sequelize,DataType) => {
-    const Usuario = sequelize.define('Usuario', {
-        id_usuario: {
+    const usuario = sequelize.define('usuario', {
+        id: {
             type:DataType.INTENGER,
             primaryKey: true, 
             autoIncrement: true
@@ -13,12 +10,15 @@ module.exports = (sequelize,DataType) => {
             type: DataType.STRING,
             allowNull: false,
         },
-        senha:DataType.STRING
-    },{
+        senha:  {
+            type: DataType.STRING,
+        allowNull: false,
+    },
+    
         tableName: 'usuario', 
         timeStamps: false
     })   
 
-    return
+    return usuario
 
 }
