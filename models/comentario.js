@@ -1,44 +1,39 @@
 module.exports = (sequelize,DataType) => {
-    const personagens = sequelize.define('personagens', {
+    const comentario = sequelize.define('comentario', {
         id: {
             type:DataType.INTENGER,
             primaryKey: true, 
             autoIncrement: true,
-            allownull: false
+            unsigned: true,
         },
-
+        
+        
         usuarios_id: {
             type:DataType.INTENGER,
             primaryKey: true, 
             autoIncrement: true
         },
 
-        nome:DataType.STRING,
+       
         
-        vitalidade: {
+        postagem_id: {
             type: DataType.INTENGER,
             allownull: false 
         },
         
-        senha:  {
+        conteudo:  {
             type: DataType.STRING,
             allowNull: false,
         },
         
-        data_nascimento: DataType.DATE,
-
-        
-        genero: DataType.STRING,
-
-        
-        imagem_perfil: DataType.STRING,
+       
     
     },
     {
-        tableName: 'personagens', 
+        tableName: 'comentario', 
         timeStamps: false
     }); 
 
-    return personagens;
+    return comentario;
 
 }

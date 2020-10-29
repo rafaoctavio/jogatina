@@ -1,5 +1,5 @@
 module.exports = (sequelize,DataType) => {
-    const personagens = sequelize.define('personagens', {
+    const postagem = sequelize.define('postagem', {
         id: {
             type:DataType.INTENGER,
             primaryKey: true, 
@@ -13,32 +13,27 @@ module.exports = (sequelize,DataType) => {
             autoIncrement: true
         },
 
-        nome:DataType.STRING,
+        post: {
+            type: DataType.STRING,
+            unique:true
+        },
         
-        vitalidade: {
-            type: DataType.INTENGER,
+        visibilidade: {
+            type: DataType.STRING,
             allownull: false 
         },
         
-        senha:  {
+           
+        imagem: {
             type: DataType.STRING,
             allowNull: false,
         },
-        
-        data_nascimento: DataType.DATE,
-
-        
-        genero: DataType.STRING,
-
-        
-        imagem_perfil: DataType.STRING,
-    
     },
     {
-        tableName: 'personagens', 
+        tableName: 'postagem', 
         timeStamps: false
     }); 
 
-    return personagens;
+    return postagem;
 
 }

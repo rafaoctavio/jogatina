@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var profileController = require("../controller/ProfileController");
+var profileController = require("./../controller/ProfileController");
 
 router.get('/', profileController.home);
 
-// router.put('/');
+router.get('/editar', profileController.edit);
 
- 
 
 module.exports = router;
 
