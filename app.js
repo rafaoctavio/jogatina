@@ -3,12 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var profileRouter = require('./routes/profile');
 var amigosRouter = require('./routes/amigos');
 var cadastroRouter = require('./routes/cadastro');
 var loginRouter = require('./routes/login');
-
 var app = express();
 
 // view engine setup
