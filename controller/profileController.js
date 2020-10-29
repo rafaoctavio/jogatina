@@ -3,9 +3,10 @@ const ProfileController = {
         return res.render('profile/home');
     },
 
-    editar: (req, res) => {
+    edit: (req, res) => {
         return res.render('profile/edit');
     },
+
 
 }
 
