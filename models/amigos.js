@@ -5,8 +5,7 @@ module.exports = (sequelize,DataType) => {
             primaryKey: true, 
             autoIncrement: true
         },
-
-       
+               
         
         amigo_id: {
             type: DataType.INTENGER,

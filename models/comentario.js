@@ -14,8 +14,7 @@ module.exports = (sequelize,DataType) => {
             autoIncrement: true
         },
 
-       
-        
+               
         postagem_id: {
             type: DataType.INTENGER,
             allownull: false 
@@ -26,11 +25,11 @@ module.exports = (sequelize,DataType) => {
             allowNull: false,
         },
         
-       
-    
+           
     },
     {
-        tableName: 'comentario', 
+        tableName: 'comentario',
+        freezeTableName: true, 
         timeStamps: false
     }); 
 

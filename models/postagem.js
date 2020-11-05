@@ -30,7 +30,8 @@ module.exports = (sequelize,DataType) => {
         },
     },
     {
-        tableName: 'postagem', 
+        tableName: 'postagem',
+        freezeTableName: true, 
         timeStamps: false
     }); 
 

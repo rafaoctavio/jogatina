@@ -1,7 +1,7 @@
 const config = {
     username:'root',
     password:'Goku@123',
-    database: 'jogatina',
+    database: 'jogatina_teste',
     host:'localhost',
     dialect:'mysql'    
 }

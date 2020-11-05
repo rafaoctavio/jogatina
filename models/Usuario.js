@@ -23,7 +23,7 @@ module.exports = (sequelize,DataType) => {
             allowNull: false
         },
         genero: {
-            type:DataType.DATE,
+            type:DataType.STRING,
             allowNull: false
         },
 
@@ -34,7 +34,8 @@ module.exports = (sequelize,DataType) => {
     
     },
     {
-        tableName: 'usuario', 
+        tableName: 'usuario',
+        freezeTableName: true, 
         timeStamps: false
     }); 
 

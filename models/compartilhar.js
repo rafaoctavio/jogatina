@@ -19,7 +19,8 @@ module.exports = (sequelize,DataType) => {
     
     },
     {
-        tableName: 'compartilhar', 
+        tableName: 'compartilhar',
+        freezeTableName: true,  
         timeStamps: false
     }); 
 
