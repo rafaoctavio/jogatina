@@ -6,16 +6,11 @@ module.exports = (sequelize,DataType) => {
             autoIncrement: true
         },
 
-       
         
         postagem_id: {
             type: DataType.INTENGER,
             allownull: false 
         },
-        
-   
-        
-       
     
     },
     {
