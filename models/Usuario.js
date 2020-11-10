@@ -39,6 +39,23 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.amigos, {foreignKey: 'amigo_id', as: 'amigos'})
+    }
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.postagem, {foreignKey: 'id', as: 'postagem'})
+    }
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.personagens, {foreignKey: 'id', as: 'personagens'})
+    }
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.comentario, {foreignKey: 'id', as: 'comentario'})
+    }
+
     return usuario;
 
-}
+};

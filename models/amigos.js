@@ -5,8 +5,7 @@ module.exports = (sequelize,DataType) => {
             primaryKey: true, 
             autoIncrement: true
         },
-               
-        
+             
         amigo_id: {
             type: DataType.INTENGER,
             allownull: false 
@@ -24,6 +23,10 @@ module.exports = (sequelize,DataType) => {
         tableName: 'amigos', 
         timeStamps: false
     }); 
+
+    amigos.associate = (models) => {
+        amigos.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
+    }
 
     return amigos;
 

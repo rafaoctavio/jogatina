@@ -38,7 +38,11 @@ module.exports = (sequelize,DataType) => {
         tableName: 'personagens',
         freezeTableName: true, 
         timeStamps: false
-    }); 
+    });
+    
+    personagens.associate = (models) => {
+        personagens.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
+    }
 
     return personagens;
 

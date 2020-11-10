@@ -35,6 +35,20 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
+    postagem.associate = (models) => {
+        postagem.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
+    }
+   
+    postagem.associate = (models) => {
+        postagem.hasMany(models.curtir, {foreignKey: 'id', as: 'usuario'})
+    }
+
+    postagem.associate = (models) => {
+        postagem.hasMany(models.comentario, {foreignKey: 'id', as: 'usuario'})
+    }
+
+
+
     return postagem;
 
 }
