@@ -5,12 +5,12 @@ module.exports = (sequelize,DataType) => {
             primaryKey: true, 
             autoIncrement: true
         },
-    
+
         amigo_id: {
             type: DataType.INTENGER,
             allownull: false 
         },
-    
+
         senha:  {
             type: DataType.STRING,
             allowNull: false,
