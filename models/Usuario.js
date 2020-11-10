@@ -41,29 +41,19 @@ module.exports = (sequelize,DataType) => {
 
 
     usuario.associate = (models) => {
-        usuario.hasMany(models.amigos, {foreignKey: 'amigo_id', as: 'amigos'})
-    }
+        usuario.hasMany(models.amigos, {foreignKey: 'amigo_id', as: 'amigos'});
 
-    usuario.associate = (models) => {
-        usuario.hasMany(models.postagem, {foreignKey: 'id', as: 'postagem'})
-    }
+        usuario.hasMany(models.postagem, {foreignKey: 'id', as: 'postagem'});
 
-    usuario.associate = (models) => {
-        usuario.hasMany(models.personagens, {foreignKey: 'id', as: 'personagens'})
-    }
+        usuario.hasMany(models.personagens, {foreignKey: 'id', as: 'personagens'});
 
-    usuario.associate = (models) => {
-        usuario.hasMany(models.comentario, {foreignKey: 'id', as: 'comentario'})
-    }
+        usuario.hasMany(models.comentario, {foreignKey: 'id', as: 'comentario'});
 
-    usuario.associate = (models) => {
-        usuario.hasMany(models.curtir, {foreignKey: 'id', as: 'curtir'})
-    }
+        usuario.hasMany(models.curtir, {foreignKey: 'id', as: 'curtir'});
 
-    usuario.associate = (models) => {
-        usuario.hasMany(models.cometario, {foreignKey: 'id', as: 'comentario'})
-    }
+        usuario.hasMany(models.compartilhar, {foreignKey: 'id', as: 'compartilhar'});
 
+    }
 
     return usuario;
 
