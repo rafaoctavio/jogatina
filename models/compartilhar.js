@@ -23,6 +23,10 @@ module.exports = (sequelize,DataType) => {
         freezeTableName: true,  
         timeStamps: false
     }); 
+    
+    compartilhar.associate = (models) => {
+        compartilhar.belongsTo(models.postagem, {foreignKey: 'id', as: 'postagem'})
+    }
 
     return compartilhar;
 

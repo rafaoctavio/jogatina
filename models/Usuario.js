@@ -56,6 +56,15 @@ module.exports = (sequelize,DataType) => {
         usuario.hasMany(models.comentario, {foreignKey: 'id', as: 'comentario'})
     }
 
+    usuario.associate = (models) => {
+        usuario.hasMany(models.curtir, {foreignKey: 'id', as: 'curtir'})
+    }
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.cometario, {foreignKey: 'id', as: 'comentario'})
+    }
+
+
     return usuario;
 
 };

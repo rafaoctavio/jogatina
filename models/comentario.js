@@ -33,6 +33,13 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
+    comentario.associate = (models) => {
+        comentario.belongsTo(models.postagem, {foreignKey: 'id', as: 'postagem'})
+    }
+
+    comentario.associate = (models) => {
+        comentario.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
+    }
     return comentario;
 
 }

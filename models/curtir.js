@@ -22,6 +22,10 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
+    curtir.associate = (models) => {
+        curtir.belongsTo(models.postagem, {foreignKey: 'id', as: 'postagem'})
+    }
+
     return curtir;
 
 }
