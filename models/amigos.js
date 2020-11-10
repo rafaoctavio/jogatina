@@ -16,8 +16,6 @@ module.exports = (sequelize,DataType) => {
             allowNull: false,
         },
         
-       
-    
     },
     {
         tableName: 'amigos', 
