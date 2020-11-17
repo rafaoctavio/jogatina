@@ -4,34 +4,33 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('Personagens', { 
     id: {
-        type:DataType.INTENGER,
+        type:Sequelize.INTEGER,
         primaryKey: true, 
         autoIncrement: true,
         allownull: false
     },
 
     usuarios_id: {
-        type:DataType.INTENGER,
-        primaryKey: true, 
-        autoIncrement: true
+        type:Sequelize.INTEGER,
+
     },
 
-    nome:DataType.STRING,
+    nome:Sequelize.STRING,
     
     vitalidade: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false 
     },
     mana: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false 
     },
     inteligência: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false 
     },
     forca: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false 
     },
     

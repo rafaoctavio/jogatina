@@ -4,31 +4,30 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('postagem', {
       id: {
-        type:DataType.INTENGER,
+        type:Sequelize.INTEGER,
         primaryKey: true, 
         autoIncrement: true,
         allownull: false
     },
 
     usuarios_id: {
-        type:DataType.INTENGER,
-        primaryKey: true, 
-        autoIncrement: true
+        type:Sequelize.INTEGER,
+
     },
 
     post: {
-        type: DataType.STRING,
+        type: Sequelize.STRING,
         unique:true
     },
     
     visibilidade: {
-        type: DataType.STRING,
+        type: Sequelize.STRING,
         allownull: false 
     },
     
        
     imagem: {
-        type: DataType.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
     },
     });

@@ -4,18 +4,18 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('amigos', {
       usuarios_id: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
 
       amigo_id: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false
       },
 
       senha: {
-        type: DataType.STRING,
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
     });

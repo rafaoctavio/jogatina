@@ -4,27 +4,23 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('comentario', {
       id: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        unsigned: true,
       },
-
 
       usuarios_id: {
-        type: DataType.INTENGER,
-        primaryKey: true,
-        autoIncrement: true
+        type: Sequelize.INTEGER,
+    
       },
 
-
       postagem_id: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false
       },
 
       conteudo: {
-        type: DataType.STRING,
+        type: Sequelize.STRING,
         allowNull: false,
       },
 

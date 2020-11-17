@@ -11,15 +11,15 @@ module.exports = {
                 unsigned: true,
             },
             nome: {
-                type: Sequelize.STRING,
+                type: Sequelize.STRING(255),
                 allowNull: false,
             },
             email: {
-                type: Sequelize.STRING,
+                type: Sequelize.STRING(255),
                 allowNull: false,
             },
             senha: {
-                type: Sequelize.STRING,
+                type: Sequelize.STRING(255),
                 allowNull: false,
             },
             data_nascimento: {
@@ -27,12 +27,12 @@ module.exports = {
                 allowNull: false
             },
             genero: {
-                type: Sequelize.STRING,
+                type: Sequelize.STRING(255),
                 allowNull: false
             },
 
             imagem_perfil: {
-                type: Sequelize.STRING,
+                type: Sequelize.STRING(255),
                 allowNull: false
             },
         });

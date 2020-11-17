@@ -4,15 +4,13 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('curtir', {
       usuarios_id: {
-        type:DataType.INTENGER,
-        primaryKey: true, 
-        autoIncrement: true
+        type:Sequelize.INTEGER,
     },
 
    
     
     postagem_id: {
-        type: DataType.INTENGER,
+        type: Sequelize.INTEGER,
         allownull: false 
     },
 
