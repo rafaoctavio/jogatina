@@ -1,5 +1,5 @@
 'use strict';
-const  { usuario } = require('../../models')
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('postagem', {
@@ -7,16 +7,14 @@ module.exports = {
         type:Sequelize.INTEGER,
         primaryKey: true, 
         autoIncrement: true,
-        allownull: false
     },
 
     usuarios_id: {
         type:Sequelize.INTEGER,
         references: {
-          model:usuario,
-          key:id
+          model:'usuario',
+          key:'id'
         }
-
     },
 
     post: {

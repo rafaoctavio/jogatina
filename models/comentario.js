@@ -1,7 +1,7 @@
 module.exports = (sequelize,DataType) => {
     const comentario = sequelize.define('comentario', {
         id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true,
             unsigned: true,
@@ -9,13 +9,13 @@ module.exports = (sequelize,DataType) => {
         
         
         usuarios_id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             autoIncrement: true
         },
 
                
         postagem_id: {
-            type: DataType.INTENGER,
+            type: DataType.INTEGER,
             allownull: false 
         },
         
@@ -32,13 +32,12 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
-    comentario.associate = (models) => {
-        comentario.belongsTo(models.postagem, {foreignKey: 'id', as: 'postagem'})
+    comentario.associate = ({postagem,usuario}) => {
+        comentario.belongsTo(postagem, {foreignKey: 'id', as: 'postagem'});
+
+        comentario.belongsTo(usuario, {foreignKey: 'id', as: 'usuario'});
     }
 
-    comentario.associate = (models) => {
-        comentario.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
-    }
     return comentario;
 
 }

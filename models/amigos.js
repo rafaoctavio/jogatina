@@ -1,19 +1,14 @@
 module.exports = (sequelize,DataType) => {
     const amigos = sequelize.define('amigos', {
         usuarios_id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true
         },
 
         amigo_id: {
-            type: DataType.INTENGER,
-            allownull: false 
-        },
-
-        senha:  {
-            type: DataType.STRING,
-            allowNull: false,
+            type: DataType.INTEGER,
+            allownull: false
         },
 
     },
@@ -22,8 +17,8 @@ module.exports = (sequelize,DataType) => {
         timeStamps: false
     }); 
 
-    amigos.associate = (models) => {
-        amigos.belongsTo(models.usuario, {foreignKey: 'id', as: 'usuario'})
+    amigos.associate = ({usuario}) => {
+        amigos.belongsTo(usuario, {foreignKey: 'id', as: 'usuario'})
     }
 
     return amigos;

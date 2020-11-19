@@ -1,10 +1,10 @@
 module.exports = (sequelize,DataType) => {
     const usuario = sequelize.define('usuario', {
         id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true,
-            unsigned: true,
+
         },
         nome: {
             type:DataType.STRING,
@@ -28,7 +28,7 @@ module.exports = (sequelize,DataType) => {
         },
 
         imagem_perfil: {
-            type:DataType.DATE,
+            type:DataType.STRING,
             allowNull: false
         },
     
