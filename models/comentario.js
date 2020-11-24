@@ -3,14 +3,14 @@ module.exports = (sequelize,DataType) => {
         id: {
             type:DataType.INTEGER,
             primaryKey: true, 
-            // autoIncrement: true,
+            autoIncrement: true,
             unsigned: true,
         },
         
         
         usuarios_id: {
             type:DataType.INTEGER,
-            // autoIncrement: true
+            autoIncrement:false
         },
 
                
