@@ -1,15 +1,14 @@
 module.exports = (sequelize,DataType) => {
     const postagem = sequelize.define('postagem', {
         id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true,
             allownull: false
         },
 
         usuarios_id: {
-            type:DataType.INTENGER,
-            primaryKey: true, 
+            type:DataType.INTEGER,
             autoIncrement: true
         },
 
@@ -30,10 +29,20 @@ module.exports = (sequelize,DataType) => {
         },
     },
     {
-        tableName: 'postagem', 
+        tableName: 'postagem',
+        freezeTableName: true, 
         timeStamps: false
     }); 
 
+    postagem.associate = ({usuario, curtir, comentario}) => {
+        postagem.belongsTo(usuario, {foreignKey: 'id', as: 'usuario'});
+
+        postagem.hasMany(curtir, {foreignKey: 'id', as: 'usuario'});
+
+        postagem.hasMany(comentario, {foreignKey: 'id', as: 'usuario'});
+    }
+   
+    
     return postagem;
 
 }

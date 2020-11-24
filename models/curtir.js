@@ -1,7 +1,7 @@
 module.exports = (sequelize,DataType) => {
     const curtir = sequelize.define('curtir', {
         usuarios_id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true
         },
@@ -9,7 +9,7 @@ module.exports = (sequelize,DataType) => {
        
         
         postagem_id: {
-            type: DataType.INTENGER,
+            type: DataType.INTEGER,
             allownull: false 
         },
         
@@ -17,9 +17,14 @@ module.exports = (sequelize,DataType) => {
     
     },
     {
-        tableName: 'curtir', 
+        tableName: 'curtir',
+        freezeTableName: true,  
         timeStamps: false
     }); 
+
+    curtir.associate = ({postagem}) => {
+        curtir.belongsTo(postagem, {foreignKey: 'id', as: 'postagem'})
+    }
 
     return curtir;
 

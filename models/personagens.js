@@ -1,43 +1,49 @@
-module.exports = (sequelize,DataType) => {
+module.exports = (sequelize, DataType) => {
     const personagens = sequelize.define('personagens', {
         id: {
-            type:DataType.INTENGER,
-            primaryKey: true, 
+            type: DataType.INTEGER,
+            primaryKey: true,
             autoIncrement: true,
             allownull: false
         },
 
         usuarios_id: {
-            type:DataType.INTENGER,
-            primaryKey: true, 
+            type: DataType.INTEGER,
             autoIncrement: true
         },
 
-        nome:DataType.STRING,
-        
+        nome: DataType.STRING,
+
         vitalidade: {
-            type: DataType.INTENGER,
-            allownull: false 
+            type: DataType.INTEGER,
+            allownull: false
         },
-        
-        senha:  {
-            type: DataType.STRING,
-            allowNull: false,
+        mana: {
+            type: DataType.INTEGER,
+            allownull: false
         },
-        
-        data_nascimento: DataType.DATE,
+        inteligência: {
+            type: DataType.INTEGER,
+            allownull: false
+        },
+        forca: {
+            type: DataType.INTEGER,
+            allownull: false
+        },
 
-        
-        genero: DataType.STRING,
 
-        
-        imagem_perfil: DataType.STRING,
-    
-    },
-    {
-        tableName: 'personagens', 
+    }, {
+        tableName: 'personagens',
+        freezeTableName: true,
         timeStamps: false
-    }); 
+    });
+
+    personagens.associate = ({usuario}) => {
+        personagens.belongsTo(usuario, {
+            foreignKey: 'id',
+            as: 'usuario'
+        })
+    }
 
     return personagens;
 

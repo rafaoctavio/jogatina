@@ -1,10 +1,10 @@
 module.exports = (sequelize,DataType) => {
     const usuario = sequelize.define('usuario', {
         id: {
-            type:DataType.INTENGER,
+            type:DataType.INTEGER,
             primaryKey: true, 
             autoIncrement: true,
-            unsigned: true,
+
         },
         nome: {
             type:DataType.STRING,
@@ -23,21 +23,38 @@ module.exports = (sequelize,DataType) => {
             allowNull: false
         },
         genero: {
-            type:DataType.DATE,
+            type:DataType.STRING,
             allowNull: false
         },
 
         imagem_perfil: {
-            type:DataType.DATE,
+            type:DataType.STRING,
             allowNull: false
         },
     
     },
     {
-        tableName: 'usuario', 
+        tableName: 'usuario',
+        freezeTableName: true, 
         timeStamps: false
     }); 
 
+
+    usuario.associate = (models) => {
+        usuario.hasMany(models.amigos, {foreignKey: 'amigo_id', as: 'amigos'});
+
+        usuario.hasMany(models.postagem, {foreignKey: 'id', as: 'postagem'});
+
+        usuario.hasMany(models.personagens, {foreignKey: 'id', as: 'personagens'});
+
+        usuario.hasMany(models.comentario, {foreignKey: 'id', as: 'comentario'});
+
+        usuario.hasMany(models.curtir, {foreignKey: 'id', as: 'curtir'});
+
+        usuario.hasMany(models.compartilhar, {foreignKey: 'id', as: 'compartilhar'});
+
+    }
+
     return usuario;
 
-}
+};
