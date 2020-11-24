@@ -3,13 +3,13 @@ module.exports = (sequelize,DataType) => {
         id: {
             type:DataType.INTEGER,
             primaryKey: true, 
-            autoIncrement: true,
+            // autoIncrement: true,
             allownull: false
         },
 
         usuarios_id: {
             type:DataType.INTEGER,
-            autoIncrement: true
+            // autoIncrement: true
         },
 
         post: {
@@ -37,9 +37,9 @@ module.exports = (sequelize,DataType) => {
     postagem.associate = ({usuario, curtir, comentario}) => {
         postagem.belongsTo(usuario, {foreignKey: 'id', as: 'usuario'});
 
-        postagem.hasMany(curtir, {foreignKey: 'id', as: 'usuario'});
+        // postagem.hasMany(curtir, {foreignKey: 'id', as: 'usuario'});
 
-        postagem.hasMany(comentario, {foreignKey: 'id', as: 'usuario'});
+        // postagem.hasMany(comentario, {foreignKey: 'id', as: 'usuario'});
     }
    
     
