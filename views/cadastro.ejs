@@ -25,43 +25,30 @@
             <p class="divider-text bg-darker">
                 <span class="bg-daker"></span>
             </p>
-            <div class="row">
-                <div class="col-12 col-sm-auto mb-3">
-                  <div class="mx-auto" style="width: 140px;">
-                    <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
-                      <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                    </div>
-                  </div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Imagem de perfil</label>
+                  <input name="imagem_perfil" type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
-                <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
-                  <div class="text-center text-sm-left mb-2 mb-sm-0">
-                    <div class="mt-2">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fa fa-fw fa-camera"></i>
-                        <span>Escolher foto</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </form>
             <form action="/cadastro/" method="POST">
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i></span>
                     </div>
-                   <input name="" class="form-control" placeholder="Nome Completo" type="text">
+                   <input name="nome" class="form-control" placeholder="Nome Completo" type="text">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i></span>
                     </div>
-                    <input name="" class="form-control" placeholder="Endereço de Email" type="email">
+                    <input name="email" class="form-control" placeholder="Endereço de Email" type="email">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-calendar"></i></span>
                     </div>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento"class="custom-select" style="max-width: 120px;">
                         <option selected="">Dia</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -95,7 +82,7 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento" class="custom-select" style="max-width: 120px;">
                         <option selected="">Mês</option>
                         <option value="01">Janeiro</option>
                         <option value="02">Fevereiro</option>
@@ -110,7 +97,7 @@
                         <option value="11">Novembro</option>
                         <option value="12">Dezembro</option>
                     </select>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento"class="custom-select" style="max-width: 120px;">
                         <option selected="">Ano</option>
                         <option value="1">2002</option>
                         <option value="2">2001</option>
@@ -150,7 +137,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-transgender-alt"></i></span>
                     </div>
-                    <select class="custom-select">
+                    <select name="genero" class="custom-select">
                         <option selected="">Gênero</option>
                         <option>Masculino</option>
                         <option>Feminino</option>
@@ -161,13 +148,13 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input class="form-control" placeholder="Crie uma senha" type="password">
+                    <input name="senha"class="form-control" placeholder="Crie uma senha" type="password">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input class="form-control" placeholder="Repita sua senha" type="password">
+                    <input  class="form-control" placeholder="Repita sua senha" type="password">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-redish btn-block"> Crie Minha Conta</button>
