@@ -1,12 +1,20 @@
 const ProfileController = {
-    home: (req, res) => {
-        return res.render('profile/home');
+  
+    home: async (req,res) => {
+        const posts = await Post.findAll({
+            include: "usuario",
+            order: [
+                ['id', 'DESC'],
+            ]
+        });
+        res.render('profile/home', { posts });
     },
-
-    edit: (req, res) => {
+    
+     edit: (req, res) => {
         return res.render('profile/edit');
     },
 
+    
 
 }
 
