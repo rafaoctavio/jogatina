@@ -5,7 +5,7 @@ const LoginController = {
         return res.render("login");
     },
     doLogin:async (req, res) => {
-        const {username,password,remmeber}=req.body
+        const {username,password,remember}=req.body
         const user=  await usuario.findOne({where:{email:username}})
 console.log (req.body)
     }
