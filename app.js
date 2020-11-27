@@ -10,6 +10,7 @@ var loginRouter = require('./routes/login');
 var personagemRouter = require('./routes/personagem');
 var app = express();
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -24,7 +25,7 @@ app.use('/cadastro', cadastroRouter);
 app.use('/amigos', amigosRouter);
 app.use('/profile', profileRouter);
 app.use('/personagem', personagemRouter);
-app.use('/', loginRouter)
+app.use('/login', loginRouter);
 app.use((req,res)=>{
   return res.status(404).render('not-found');
 })
