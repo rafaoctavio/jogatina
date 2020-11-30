@@ -3,7 +3,7 @@ var router = express.Router();
 var profileController = require("./../controller/ProfileController");
 var uploadMiddleware = require('../middleware/uploadMiddleware');
 
-router.get('/:id', profileController.home);
+router.get('/', profileController.home);
 
 // router.get('/editar',uploadMiddleware, profileController.edit);
 

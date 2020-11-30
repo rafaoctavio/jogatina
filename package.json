@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "sass": "node-sass --watch public/stylesheets/style.scss public/stylesheets/style.css",
     "sass-min": "node-sass --watch assets/css/style.scss assets/css/style.min.css --output-style compressed",
-    "sass-login": "node-sass --watch public/stylesheets/login.scss public/stylesheets/login.css"
+    "sass-login": "node-sass --watch public/stylesheets/login.scss public/stylesheets/login.css",
+    "dev": "npx nodemon ./bin/www"
   },
   "dependencies": {
     "@popperjs/core": "^2.5.3",
