@@ -25,43 +25,29 @@
             <p class="divider-text bg-darker">
                 <span class="bg-daker"></span>
             </p>
-            <div class="row">
-                <div class="col-12 col-sm-auto mb-3">
-                  <div class="mx-auto" style="width: 140px;">
-                    <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
-                      <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                    </div>
+
+            <form action="/cadastro" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Imagem de perfil</label>
+                    <input name="imagem_perfil" type="file" class="form-control-file" id="exampleFormControlFile1">
                   </div>
-                </div>
-                <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
-                  <div class="text-center text-sm-left mb-2 mb-sm-0">
-                    <div class="mt-2">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fa fa-fw fa-camera"></i>
-                        <span>Mudar foto</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <form action="/filmes/" method="POST">
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i></span>
                     </div>
-                   <input name="" class="form-control" placeholder="Nome Completo" type="text">
+                   <input name="nome" class="form-control" placeholder="Nome Completo" type="text">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i></span>
                     </div>
-                    <input name="" class="form-control" placeholder="Endereço de Email" type="email">
+                    <input name="email" class="form-control" placeholder="Endereço de Email" type="email">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-calendar"></i></span>
                     </div>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento"class="custom-select" style="max-width: 120px;">
                         <option selected="">Dia</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -95,7 +81,7 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento" class="custom-select" style="max-width: 120px;">
                         <option selected="">Mês</option>
                         <option value="01">Janeiro</option>
                         <option value="02">Fevereiro</option>
@@ -110,47 +96,47 @@
                         <option value="11">Novembro</option>
                         <option value="12">Dezembro</option>
                     </select>
-                    <select class="custom-select" style="max-width: 120px;">
+                    <select name="data_nascimento"class="custom-select" style="max-width: 120px;">
                         <option selected="">Ano</option>
-                        <option value="1">2002</option>
-                        <option value="2">2001</option>
-                        <option value="3">2000</option>
-                        <option value="4">1999</option>
-                        <option value="5">1998</option>
-                        <option value="6">1997</option>
-                        <option value="7">1996</option>
-                        <option value="8">1995</option>
-                        <option value="9">1994</option>
-                        <option value="10">1993</option>
-                        <option value="11">1992</option>
-                        <option value="12">1991</option>
-                        <option value="13">1990</option>
-                        <option value="14">1989</option>
-                        <option value="15">1988</option>
-                        <option value="16">1987</option>
-                        <option value="17">1986</option>
-                        <option value="18">1985</option>
-                        <option value="19">1984</option>
-                        <option value="20">1983</option>
-                        <option value="21">1982</option>
-                        <option value="22">1981</option>
-                        <option value="23">1979</option>
-                        <option value="24">1978</option>
-                        <option value="25">1977</option>
-                        <option value="26">1976</option>
-                        <option value="27">1975</option>
-                        <option value="28">1974</option>
-                        <option value="29">1973</option>
-                        <option value="30">1972</option>
-                        <option value="31">1971</option>
-                        <option value="32">1970</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                        <option value="1979">1979</option>
+                        <option value="1978">1978</option>
+                        <option value="1977">1977</option>
+                        <option value="1976">1976</option>
+                        <option value="1975">1975</option>
+                        <option value="1974">1974</option>
+                        <option value="1973">1973</option>
+                        <option value="1972">1972</option>
+                        <option value="1971">1971</option>
+                        <option value="1970">1970</option>
                     </select>
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-transgender-alt"></i></span>
                     </div>
-                    <select class="custom-select">
+                    <select name="genero" class="custom-select">
                         <option selected="">Gênero</option>
                         <option>Masculino</option>
                         <option>Feminino</option>
@@ -161,13 +147,13 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input class="form-control" placeholder="Crie uma senha" type="password">
+                    <input name="senha"class="form-control" placeholder="Crie uma senha" type="password">
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input class="form-control" placeholder="Repita sua senha" type="password">
+                    <input  class="form-control" placeholder="Repita sua senha" type="password">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-redish btn-block"> Crie Minha Conta</button>

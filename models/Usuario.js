@@ -8,35 +8,35 @@ module.exports = (sequelize,DataType) => {
         },
         nome: {
             type:DataType.STRING,
-            allowNull: false,
+            allowNull: true
         },
         email: {
             type: DataType.STRING,
-            allowNull: false,
+            allowNull: true
         },
         senha:  {
             type: DataType.STRING,
-            allowNull: false,
+            allowNull: true
         },
         data_nascimento: {
             type:DataType.DATE,
-            allowNull: false
+            allowNull: true
         },
         genero: {
             type:DataType.STRING,
-            allowNull: false
+            allowNull: true
         },
 
         imagem_perfil: {
             type:DataType.STRING,
-            allowNull: false
+            allowNull: true
         },
     
     },
     {
         tableName: 'usuario',
         freezeTableName: true, 
-        timeStamps: false
+        timestamps: false
     }); 
 
 
