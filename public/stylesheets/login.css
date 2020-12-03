@@ -7428,7 +7428,7 @@ body {
   height: auto;
   padding: 10px;
   font-size: 16px;
-  color: #fff; }
+  color: #000; }
 
 .form-signin input::-webkit-input-placeholder {
   /* WebKit browsers */

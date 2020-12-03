@@ -41,7 +41,7 @@ module.exports = (sequelize,DataType) => {
 
 
     usuario.associate = (models) => {
-        usuario.hasMany(models.amigos, {foreignKey: 'amigo_id', as: 'amigos'});
+        usuario.belongsToMany(models.amigos, {through: 'amigos', foreignKey: 'usuarios_id', as: 'amigo'});
 
         usuario.hasMany(models.postagem, {foreignKey: 'id', as: 'postagem'});
 

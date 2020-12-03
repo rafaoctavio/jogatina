@@ -76,13 +76,10 @@
                                       <div class="card-body p-2">
                                         <div class="e-profile">
                                           <div class="row">
-                                            <div class="col-12 col-sm-auto mb-3">
-                                              <div class="mx-auto" style="width: 140px;">
-                                                <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
-                                                  <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                                                </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">Imagem de perfil</label>
+                                                <input name="imagem_perfil" type="file" class="form-control-file" id="exampleFormControlFile1" >
                                               </div>
-                                            </div>
                                             <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                                               <div class="text-center text-sm-left mb-2 mb-sm-0">
                                                 <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">Nome Completo</h4>
@@ -100,24 +97,24 @@
                                           </ul>
                                           <div class="tab-content pt-3">
                                             <div class="tab-pane active">
-                                              <form>
+                                              <form action="/editar/<%= myUser.id %>?_method=PUT">
                                                 <div class="form-group input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"> <i class="fa fa-user"></i></span>
                                                     </div>
-                                                   <input name="" class="form-control" placeholder="Nome Completo" type="text">
+                                                   <input name="nome" class="form-control" placeholder="Nome Completo" type="text" value="<%= myUser.nome %>">
                                                 </div>
                                                 <div class="form-group input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"> <i class="fa fa-envelope"></i></span>
                                                     </div>
-                                                    <input name="" class="form-control" placeholder="Endereço de Email" type="email">
+                                                    <input name="email" class="form-control" placeholder="Endereço de Email" type="email" value="<%= myUser.email%>">
                                                 </div>
                                                 <div class="form-group input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"> <i class="fa fa-calendar"></i></span>
                                                     </div>
-                                                    <select class="custom-select" style="max-width: 120px;">
+                                                    <select name="data_nascimento"class="custom-select" style="max-width: 120px;" value="<%= myUser.data_nascimento%>">
                                                         <option selected="">Dia</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -206,7 +203,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="fas fa-transgender-alt"></i></span>
                                                     </div>
-                                                    <select class="custom-select">
+                                                    <select name="genero" class="custom-select" value="<%= myUser.genero%>">
                                                         <option selected="">Gênero</option>
                                                         <option>Masculino</option>
                                                         <option>Feminino</option>
@@ -217,25 +214,30 @@
                                                   <div class="input-group-prepend">
                                                       <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                                   </div>
-                                                  <input class="form-control" placeholder="Insira senha atual" type="password">
+                                                  <input name="senha" class="form-control" placeholder="Insira senha atual" type="password" value="<%= myUser.senha %>">
                                               </div>
                                                 <div class="form-group input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Crie uma senha" type="password">
+                                                    <input name="senha" class="form-control" placeholder="Crie uma senha" type="password" value="<%= myUser.senha %>">
                                                 </div>
                                                 <div class="form-group input-group">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                                     </div>
-                                                    <input class="form-control" placeholder="Repita sua senha" type="password">
+                                                    <input name="senha" class="form-control" placeholder="Repita sua senha" type="password" value="<%= myUser.senha %>">
                                                 </div>
                                                 <div class="form-group">
                                                     <button type="submit" class="btn btn-redish btn-block"> Salvar</button>
                                                 </div>
                                             </form>
-                            
+                                            <form form action="/deletar/<%= myUser.id %>?_method=DELETE">
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-redish btn-block"> Deletar Usuário</button>
+                                                </div>
+                                            </form>
+
                                             </div>
                                           </div>
                                         </div>

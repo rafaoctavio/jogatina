@@ -83,7 +83,7 @@
                                 <div class="card-body py-2 bg-dark">
                                     <div class="d-flex bg-dark">
                                         <div>
-                                            <img class="rounded-circle bg-dark" width="50" src="/images/profile.jpg">
+                                            <img class="rounded-circle bg-dark" width="50" src="/uploads/<%= myUser.imagem_perfil %>">
                                         </div>
                                         <div class="col">
                                             <form action="#">
@@ -136,16 +136,17 @@
                             <!-- ITEM -->
  
                             <!-- ITEM -->
+                            <% myUser.amigo.forEach(amigo => { %>
                             <div class="card my-3 bg-dark border-0 py-3">
                                 <div class="card-header bg-dark border-0 py-2">
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex justify-content-between">
                                             <a href="#">
-                                                <img class="rounded-circle" src="/images/vitor.jpg" width="60" alt="" />
+                                                <img class="rounded-circle" src="/uploads/<% amigo.imagem_perfil %>" width="60" alt="" />
                                             </a>
                                             <div class="ml-3 mt-3">
                                                 <div class="h4 m-0">
-                                                    <a href="#">Victor</a>
+                                                    <a href="#"><% amigo.nome %></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,56 +154,23 @@
                                             <button class="btn btn-link dropdown-toggle mt-3" type="button" id="dropdownMenuButton"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                             <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Enviar mensagem</a>
-                                                <a class="dropdown-item" href="#">Convidar para partida</a>
+                                                <a class="dropdown-item" href="#">Ver Perfil</a>
                                                 <a class="dropdown-item" href="#">Ver Personagens</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                             
-                            </div
-                            <!-- ITEM -->
-                            <div class="card my-3 bg-dark border-0 py-3">
-                                <div class="card-header bg-dark border-0 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex justify-content-between">
-                                            <a href="#">
-                                                <img class="rounded-circle" src="/images/fallen.jpg" width="60" alt="" />
-                                            </a>
-                                            <div class="ml-3 mt-3">
-                                                <div class="h4 m-0">
-                                                    <a href="#">Fallen</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown">
-                                            <button class="btn btn-link dropdown-toggle mt-3" type="button" id="dropdownMenuButton"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                            <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Enviar mensagem</a>
-                                                <a class="dropdown-item" href="#">Convidar para partida</a>
-                                                <a class="dropdown-item" href="#">Ver Personagens</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                             
-                            </div><!-- ITEM -->
-    
-                        </div>
-                        
-    
-    
-                            
-                        
+                            </div>
+                            <% }) %>
+                        </div> 
                     </div>
                 </div>
-                 
+            </div>
+        </div>
     </main>
 
 
-        <%- include('./partials/footer')%>
+    <%- include('./partials/footer')%>
 
 
 </body>
