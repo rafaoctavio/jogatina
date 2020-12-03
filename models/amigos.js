@@ -5,7 +5,7 @@ module.exports = (sequelize,DataType) => {
             autoIncrement: true,
             primaryKey: true
         },
-        
+
         usuarios_id: {
             type:DataType.INTEGER,
             autoIncrement: false
@@ -18,13 +18,13 @@ module.exports = (sequelize,DataType) => {
 
     },
     {
-        tableName: 'amigos', 
+        tableName: 'amigos',
         timestamps: false
-        
-    }); 
-    
-    amigos.associate = ({usuario}) => {
-        amigos.belongsToMany(usuario, {through: 'amigos', foreignKey: 'id', as: 'usuario'})
+
+    });
+
+    amigos.associate = ({ usuario }) => {
+        amigos.belongsToMany(usuario, { through: 'amigos', foreignKey: 'id', as: 'usuario' })
     }
 
     return amigos;

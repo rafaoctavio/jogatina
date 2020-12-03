@@ -18,17 +18,15 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
 
 ## Histórico do Desenvolvimento
 
-* Sprint 5
-
-   - Em breve 
-
 * Sprint 4
 
-    - Em breve 
+    - Sprint Back-end 
+    - Objetivo: Finalizar back-end de todo o site.
+    - Requisitos : Para conclusão dessa sprint será necessário realizar todo o back-end do site e suas adaptações
 
 * Sprint 3
 
-    - Em breve 
+    - Sprint dedicada a criação do model de banco de dados da pagina.
     
 * Sprint 2
 
@@ -46,10 +44,5 @@ O Desenvolvimento do site foi feito em parceria para atingir as metas das "sprin
     - Requisitos : Entregar o wireframe feito no figma.
   
 
-## Contribuidores
 
-1. Cezar (https://github.com/rafaelsnak)
-2. Kaique (https://github.com/Kaique-Rodrigues)
-3. Rafael (https://github.com/rafaoctavio)
-4. Ricardo (https://github.com/ricardomasiero)
 
