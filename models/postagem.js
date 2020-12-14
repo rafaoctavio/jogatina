@@ -9,7 +9,7 @@ module.exports = (sequelize,DataType) => {
 
         usuarios_id: {
             type:DataType.INTEGER,
-            autoIncrement: true
+            autoIncrement: false
         },
 
         post: {
@@ -25,21 +25,21 @@ module.exports = (sequelize,DataType) => {
            
         imagem: {
             type: DataType.STRING,
-            allowNull: false,
+            allowNull: true,
         },
     },
     {
         tableName: 'postagem',
         freezeTableName: true, 
-        timeStamps: false
+        timestamps: false
     }); 
 
     postagem.associate = ({usuario, curtir, comentario}) => {
         postagem.belongsTo(usuario, {foreignKey: 'id', as: 'usuario'});
 
-        postagem.hasMany(curtir, {foreignKey: 'id', as: 'usuario'});
+        postagem.hasMany(curtir, {foreignKey: 'id', as: 'curtidas'});
 
-        postagem.hasMany(comentario, {foreignKey: 'id', as: 'usuario'});
+        postagem.hasMany(comentario, {foreignKey: 'id', as: 'comentarios'});
     }
    
     

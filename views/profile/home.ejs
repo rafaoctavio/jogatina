@@ -15,7 +15,7 @@
     <%- include('./../partials/header') %>
 
     <main>
-        
+
         <div class="container-fluid">
             <div class="row">
 
@@ -77,14 +77,14 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Jogue o D20!</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                                 <div class="card-body bg-dark">
                                     <div class="d-flex bg-dark">
                                         <div>
                                             <img class="rounded-circle bg-dark" width="50"
-                                                src="/images/profile.jpg">
+                                                src="/uploads/<%= myUser.imagem_perfil %>">
                                         </div>
                                         <div class="col">
                                             <form action="#">
@@ -119,226 +119,56 @@
                             </div>
 
                             <!-- ITEM -->
-                            <div class="card my-3 bg-dark">
-                                <div class="card-header bg-dark border-0 py-2">
-                                    <div class="d-flex justify-content-between bg-dark">
+                            <% postagens.forEach(postagem => { %>
+                                <div class="card my-3 bg-dark">
+                                    <div class="card-header bg-dark border-0 py-2">
                                         <div class="d-flex justify-content-between bg-dark">
-                                            <a href="#">
-                                                <img class="rounded-circle bg-dark"
-                                                    src="https://picsum.photos/80/80/?random" width="45" alt="" />
-                                            </a>
-                                            <div class="ml-3 bg-dark">
-                                                <div class="h6 m-0 bg-dark">
-                                                    <a href="#">Brother 1</a>
+                                            <div class="d-flex justify-content-between bg-dark">
+                                                <a href="#">
+                                                    <img class="rounded-circle bg-dark"
+                                                        src="https://picsum.photos/80/80/?random" width="45" alt="" />
+                                                </a>
+                                                <div class="ml-3 bg-dark">
+                                                    <div class="h6 m-0 bg-dark">
+                                                        <a href="#"><%= postagem.usuario.nome %></a>
+                                                    </div>
+                                                    <div class="text-muted h8 bg-dark">à 2 min <i class="fa fa-globe"
+                                                            aria-hidden="true"></i></div>
                                                 </div>
-                                                <div class="text-muted h8 bg-dark">à 2 min <i class="fa fa-globe"
-                                                        aria-hidden="true"></i></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0 pb-2 bg-dark">
+                                        <p><%= postagem.post %></p>
+                                    </div>
+                                    <img class="card-img-top rounded-0" src="https://picsum.photos/320/250/?random"
+                                        alt="Card image cap">
+                                    <div class="card-footer bg-dark border-0 p-0">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center py-2 mx-3 border-bottom bg-dark">
+                                            <div>
+                                            </div>
+                                            <div class="h7"> 3279 <a href="#"> comentários</a> 44845 vezes <a
+                                                    href="#">compartilhado</a></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center my-1 bg-dark">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-success"> <i class="fa fa-thumbs-up"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-warning"><i class="fa fa-comment"
+                                                        aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-redish"><i class="fa fa-share"><span
+                                                            class="sr-only"></span></i></button>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-                                <!-- ITEM -->
-    
-                                 <!-- ITEM -->
-                                <div class="card-body pt-0 pb-2 bg-dark">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit labore et eligendi velit odio ratione sed, quam atque veritatis illo? Eius nobis dolorem tempora fugiat deleniti quas aut quo!
-                                </div>
-                                <img class="card-img-top rounded-0" src="https://picsum.photos/320/250/?random"
-                                    alt="Card image cap">
-                                <div class="card-footer bg-dark border-0 p-0">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center py-2 mx-3 border-bottom bg-dark">
-                                        <div>
-
-                                        </div>
-                                        <div class="h7"> 3279 <a href="#"> comentários</a> 44845 vezes <a
-                                                href="#">compartilhado</a></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center my-1 bg-dark">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-success"> <i class="fa fa-thumbs-up"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-comment"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-redish"><i class="fa fa-share"><span
-                                                        class="sr-only"></span></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ITEM -->
-
-                            <!-- ITEM -->
-                            <div class="card my-3 bg-dark">
-                                <div class="card-header bg-dark border-0 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex justify-content-between">
-                                            <a href="#">
-                                                <img class="rounded-circle"
-                                                    src="https://picsum.photos/80/80/?random?image=2" width="45"
-                                                    alt="" />
-                                            </a>
-                                            <div class="ml-3">
-                                                <div class="h6 m-0">
-                                                    <a href="#">Brother 2</a><a href="#"></a>
-                                                </div>
-                                                <div class="text-muted h8">à 5 min <i class="fa fa-globe"
-                                                        aria-hidden="true"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0 pb-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt omnis sit
-                                    animi tempora optio consequuntur. Facilis magnam quod accusamus qui, eveniet rerum
-                                    harum neque cum vel, velit beatae veritatis.
-                                </div>
-                                <img class="card-img-top rounded-0" src="https://picsum.photos/g/320/250/?random"
-                                    alt="Card image cap">
-                                <div class="card-footer bg-dark border-0 p-0">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center py-2 mx-3 border-bottom">
-                                        <div>
-
-                                        </div>
-                                        <div class="h7"> 3279 <a href="#"> comentários</a> 44845 vezes <a
-                                                href="#">compartilhado</a></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center my-2">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-success"> <i class="fa fa-thumbs-up"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-comment"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-redish"><i class="fa fa-share"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ITEM -->
-                            <!-- ITEM -->
-                            <div class="card my-3">
-                                <div class="card-header bg-dark py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex justify-content-between">
-                                            <a href="#">
-                                                <img class="rounded-circle"
-                                                    src="https://picsum.photos/80/80/?random?image=0" width="45"
-                                                    alt="" />
-                                            </a>
-                                            <div class="ml-3">
-                                                <div class="h6 m-0">
-                                                    <a href="#">Brother 2</a>
-                                                </div>
-                                                <div class="text-muted h8">à 2 min <i class="fa fa-globe"
-                                                        aria-hidden="true"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0 pb-2 bg-dark">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore ea repellat
-                                    veniam beatae, officia ad sint alias! Quam provid
-                                </div>
-                                <img class="card-img-top rounded-0" src="https://picsum.photos/320/250/?random?image=0"
-                                    alt="Card image cap">
-                                <div class="card-footer bg-dark border-0 p-0">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center py-2 mx-3 border-bottom">
-                                        <div>
-
-                                        </div>
-                                        <div class="h7"> 3279 <a href="#"> comentários</a> 44845 vezes <a
-                                                href="#">compartilhado</a></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center my-1">
-                                        <div class="col align-items-center">
-                                            <button type="button" class="btn btn-success"> <i class="fa fa-thumbs-up"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-comment"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-redish"><i class="fa fa-share"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ITEM -->
-
-                            <!-- ITEM -->
-                            <div class="card my-3">
-                                <div class="card-header bg-dark border-0 py-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex justify-content-between">
-                                            <a href="#">
-                                                <img class="rounded-circle"
-                                                    src="https://picsum.photos/80/80/?random?image=1" width="45"
-                                                    alt="" />
-                                            </a>
-                                            <div class="ml-3">
-                                                <div class="h6 m-0">
-                                                    <a href="#">Brother 4</a> compatilhou <a href="#">Comunidade dos
-                                                        Jogadores de RPG</a>
-                                                </div>
-                                                <div class="text-muted h8">à 5 min <i class="fa fa-globe"
-                                                        aria-hidden="true"></i></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0 pb-2">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat soluta quo vitae
-                                    excepturi veritatis animi adipisci, voluptate optio inventore magnam. Laboriosam,
-                                    nulla. Ut itaque nihil quia voluptatum voluptate, nam aspernatur.
-                                </div>
-                                <img class="card-img-top rounded-0" src="https://picsum.photos/320/250/?random?image=1"
-                                    alt="Card image cap">
-                                <div class="card-footer bg-dark border-0 p-0">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center py-2 mx-3 border-bottom">
-                                        <div>
-
-                                        </div>
-                                        <div class="h7"> 3279 <a href="#"> comentários</a> 44845 vezes <a
-                                                href="#">compartilhado</a></div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center my-1">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-success"> <i class="fa fa-thumbs-up"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning"><i class="fa fa-comment"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-redish"><i class="fa fa-share"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ITEM -->
+                            <% }) %>
 
                         </div>
                     </div>
@@ -348,7 +178,6 @@
     </main>
 
     <%- include('./..//partials/footer') %>
-
 
 </body>
 

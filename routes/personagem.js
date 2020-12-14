@@ -4,7 +4,7 @@ var PersonagemController = require("./../controller/PersonagemController");
 
 router.get('/editar', PersonagemController.edit);
 
-router.get('/criar', PersonagemController.criar);
+router.post('/criar', PersonagemController.criar);
  
 
 module.exports = router;
